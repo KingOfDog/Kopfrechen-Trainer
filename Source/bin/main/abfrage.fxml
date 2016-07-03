@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<TilePane alignment="CENTER" minWidth="-Infinity" orientation="VERTICAL" prefHeight="506.0" prefWidth="791.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="main.FXMLDocumentController">
+  <children>
+    <Button defaultButton="true" mnemonicParsing="false" onAction="#backHome" text="Zurück" TilePane.alignment="TOP_LEFT">
+      <tooltip>
+        <Tooltip text="Zurück zum Hauptmenü" />
+      </tooltip>
+    </Button>
+    <Label fx:id="labelTitle" alignment="BOTTOM_CENTER" contentDisplay="CENTER" prefWidth="600.0" text="Löse die Aufgaben!" textAlignment="CENTER">
+      <font>
+        <Font size="16.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label fx:id="labelSubheader" alignment="TOP_CENTER" contentDisplay="CENTER" prefWidth="600.0" text="Viel Glück!" textAlignment="CENTER">
+      <font>
+        <Font size="12.0" />
+      </font>
+      <TilePane.margin>
+        <Insets top="-50.0" />
+      </TilePane.margin>
+    </Label>
+    <Label fx:id="exercise" alignment="CENTER" contentDisplay="CENTER" prefHeight="42.0" prefWidth="600.0" text="Aufgabe" textAlignment="CENTER" wrapText="false">
+      <font>
+        <Font size="20.0" />
+      </font>
+      <TilePane.margin>
+        <Insets bottom="15.0" />
+      </TilePane.margin>
+    </Label>
+    <TextField fx:id="answerInput" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="43.0" prefWidth="311.0">
+      <tooltip>
+        <Tooltip font="$x1" text="Lösung eingeben" />
+      </tooltip>
+    </TextField>
+    <Button fx:id="submit" alignment="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#submitAnswer" prefHeight="42.0" prefWidth="160.0" text="Fertig" textAlignment="LEFT" TilePane.alignment="CENTER">
+      <font>
+        <Font name="System Bold" size="16.0" />
+      </font>
+      <tooltip>
+        <Tooltip font="$x1" text="Bestätigung der Lösung" />
+      </tooltip>
+      <TilePane.margin>
+        <Insets top="10.0" />
+      </TilePane.margin>
+    </Button>
+    <Label fx:id="exercisesCorrect" text="0 / 0 Aufgaben richtig gelöst" TilePane.alignment="BOTTOM_LEFT" />
+    <Label fx:id="mark" text="Note:" TilePane.alignment="TOP_LEFT" />
+  </children>
+</TilePane>

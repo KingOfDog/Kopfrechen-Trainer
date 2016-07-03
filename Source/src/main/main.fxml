@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<TilePane alignment="CENTER" minWidth="-Infinity" orientation="VERTICAL" prefHeight="506.0" prefWidth="791.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="main.FXMLDocumentController">
+  <children>
+    <Label id="labelTitle" alignment="BOTTOM_CENTER" contentDisplay="CENTER" prefWidth="600.0" text="Willkommen im Kopfrechen-Trainer!" textAlignment="CENTER">
+      <font>
+        <Font size="20.0" />
+      </font>
+    </Label>
+    <Label id="labelSubheader" alignment="TOP_CENTER" contentDisplay="CENTER" prefWidth="600.0" text="von Marcel Struck" textAlignment="CENTER">
+      <font>
+        <Font size="12.0" />
+      </font>
+      <TilePane.margin>
+        <Insets top="-50.0" />
+      </TilePane.margin>
+    </Label>
+    <Button id="submit" alignment="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#startGame" prefHeight="42.0" prefWidth="160.0" text="Los geht's" textAlignment="LEFT" TilePane.alignment="CENTER">
+      <font>
+        <Font name="System Bold" size="16.0" />
+      </font>
+      <tooltip>
+        <Tooltip text="Beginn der Abfrage">
+          <font>
+            <Font size="16.0" fx:id="x1" />
+          </font>
+        </Tooltip>
+      </tooltip>
+      <TilePane.margin>
+        <Insets top="10.0" />
+      </TilePane.margin>
+    </Button>
+    <Button mnemonicParsing="false" onAction="#statsShow" text="Statistiken">
+      <tooltip>
+        <Tooltip text="Sehe deine Statistiken ein" />
+      </tooltip>
+    </Button>
+  </children>
+</TilePane>

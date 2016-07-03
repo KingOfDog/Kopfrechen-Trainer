@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<TilePane alignment="CENTER" minWidth="-Infinity" orientation="VERTICAL" prefHeight="506.0" prefWidth="791.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="main.FXMLDocumentController">
+  <children>
+    <Button defaultButton="true" mnemonicParsing="false" onAction="#backHome" text="Zurück" TilePane.alignment="TOP_LEFT">
+      <tooltip>
+        <Tooltip text="Zurück zum Hauptmenü" />
+      </tooltip>
+      <TilePane.margin>
+        <Insets top="-175.0" />
+      </TilePane.margin>
+    </Button>
+    <Label id="labelTitle" alignment="TOP_CENTER" contentDisplay="CENTER" prefWidth="600.0" text="Deine Statistiken" textAlignment="CENTER" TilePane.alignment="TOP_CENTER">
+      <font>
+        <Font size="20.0" />
+      </font>
+      <TilePane.margin>
+        <Insets top="-150.0" fx:id="x1" />
+      </TilePane.margin>
+    </Label>
+    <Label fx:id="exercises" text="Aufgaben: " TilePane.alignment="CENTER_LEFT">
+      <TilePane.margin>
+        <Insets top="-200.0" />
+      </TilePane.margin>
+    </Label>
+    <Label fx:id="exercisesSolved" text="Gelöste Aufgaben:" TilePane.alignment="CENTER_LEFT" TilePane.margin="$x1" />
+    <Label fx:id="mark" text="Notenpunkte:" TilePane.alignment="CENTER_LEFT">
+      <TilePane.margin>
+        <Insets top="-100.0" />
+      </TilePane.margin>
+    </Label>
+    <Label fx:id="markWords" text="Note:" TilePane.alignment="CENTER_LEFT">
+      <TilePane.margin>
+        <Insets top="-50.0" />
+      </TilePane.margin>
+    </Label>
+  </children>
+</TilePane>
