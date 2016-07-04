@@ -1,6 +1,6 @@
 {
-  version: "1.0",
-  path: "https://raw.githubusercontent.com/KingOfDog/Kopfrechen-Trainer/master/downloads/version1-0.exe",
-  version_info: "https://kingofdog.github.io/Kopfrechen-Trainer/version1-0.html",
+  version: "1.1",
+  path: "https://github.com/KingOfDog/Kopfrechen-Trainer/raw/master/Downloads/koprechen-trainer-1.1.exe",
+  version_info: "https://github.com/KingOfDog/Kopfrechen-Trainer/blob/master/Downloads/version1-1.md",
   check_sum: "coming"
 }
