@@ -3,38 +3,38 @@ package main;
 public class Marks {
 	public static String main(double ecp) {
 		String note = "";
-		if(ecp == 15) {
-			note = "Sehr gut plus";
+		if(ecp >= 15) {
+			note = "Sehr gut plus (1+)";
 		} else if(ecp >= 14) {
-			note = "Sehr gut";
+			note = "Sehr gut (1)";
 		} else if(ecp >= 13) {
-			note = "Sehr gut minus";
+			note = "Sehr gut minus (1-)";
 		} else if(ecp >= 12) {
-			note = "Gut plus";
+			note = "Gut plus (2+)";
 		} else if(ecp >= 11) {
-			note = "Gut";
+			note = "Gut (2)";
 		} else if(ecp >= 10) {
-			note = "Gut minus";
+			note = "Gut minus (2-)";
 		} else if(ecp >= 9) {
-			note = "Befriedigend plus";
+			note = "Befriedigend plus (3+)";
 		} else if(ecp >= 8) {
-			note = "Befriedigend";
+			note = "Befriedigend (3)";
 		} else if(ecp >= 7) {
-			note = "Befriedigend minus";
+			note = "Befriedigend minus (3-)";
 		} else if(ecp >= 6) {
-			note = "Ausreichend plus";
+			note = "Ausreichend plus (4+)";
 		} else if(ecp >= 5) {
-			note = "Ausreichend";
+			note = "Ausreichend (4)";
 		} else if(ecp >= 4) {
-			note = "Ausreichend minus";
+			note = "Ausreichend minus (4-)";
 		} else if(ecp >= 3) {
-			note = "Mangelhaft plus";
+			note = "Mangelhaft plus (5+)";
 		} else if(ecp >= 2) {
-			note = "Mangelhaft";
+			note = "Mangelhaft (5)";
 		} else if(ecp >= 1) {
-			note = "Mangelhaft minus";
+			note = "Mangelhaft minus (5-)";
 		} else if(ecp >= 0) {
-			note = "Ungenügend";
+			note = "Ungenügend (6)";
 		}
 		return note;
 	}

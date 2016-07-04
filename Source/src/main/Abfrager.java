@@ -5,7 +5,9 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.paint.Color;
+import jsonFiles.Statistics;
 
+@SuppressWarnings("restriction")
 public class Abfrager {
 	
 	public static String exercise = "";
@@ -53,6 +55,7 @@ public class Abfrager {
 		Label title2 = (Label) scene.lookup("#labelSubheader");
 		
 		exercises++;
+		Statistics.exercises += 1;
 		
 		if(answer == result) {
 			labelExercise.setTextFill(Color.web("#2ecc71"));
@@ -60,14 +63,15 @@ public class Abfrager {
 			title.setTextFill(Color.web("#2ecc71"));
 			title2.setText("Gut gemacht!");
 			correct++;
-			SaveFiles.addOne(true);
+			Statistics.exercisesCorrect += 1;
 		} else {
 			labelExercise.setTextFill(Color.web("#e74c3c"));
 			title.setText("Leider falsch!");
 			title.setTextFill(Color.web("#e74c3c"));
 			title2.setText("Das wird schon noch!");
-			SaveFiles.addOne(false);
-		}
+			
+		}		
+		SaveFiles.writeStats();
 		
 		Label exercisesCorrect = (Label) scene.lookup("#exercisesCorrect");
 		exercisesCorrect.setText(correct + " / " + exercises + " Aufgaben richtig gelöst");

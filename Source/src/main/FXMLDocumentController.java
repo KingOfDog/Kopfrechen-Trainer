@@ -13,11 +13,12 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+@SuppressWarnings("restriction")
 public class FXMLDocumentController implements Initializable {
 	
 	@FXML
 	private void startGame(ActionEvent event) throws IOException {
-		Parent abfrager = FXMLLoader.load(getClass().getResource("abfrage.fxml"));
+		Parent abfrager = FXMLLoader.load(getClass().getResource("/src/main/abfrage.fxml"));
 		Scene abfragerScene = new Scene(abfrager);
 		Stage abfragerStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 		
@@ -41,7 +42,7 @@ public class FXMLDocumentController implements Initializable {
 	
 	@FXML
 	private void statsShow(ActionEvent event) throws IOException {
-		Parent stats = FXMLLoader.load(getClass().getResource("stats.fxml"));
+		Parent stats = FXMLLoader.load(getClass().getResource("/src/main/stats.fxml"));
 		Scene statsScene = new Scene(stats);
 		Stage statsStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 		
@@ -53,8 +54,26 @@ public class FXMLDocumentController implements Initializable {
 	}
 	
 	@FXML
+	private void goToSettings(ActionEvent event) throws IOException {
+		Parent settings = FXMLLoader.load(getClass().getResource("/src/main/settings.fxml"));
+		Scene setScene = new Scene(settings);
+		Stage setStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+		
+		setStage.setScene(setScene);
+		setStage.show();
+		
+		Settings.setDefault(setScene);
+	}
+	
+	@FXML
+	private void saveSettings(ActionEvent event) throws IOException {
+		Scene scene = ((Node) event.getSource()).getScene().getWindow().getScene();
+		Settings.update(scene);
+	}
+	
+	@FXML
 	private void backHome(ActionEvent event) throws IOException {
-		Parent home = FXMLLoader.load(getClass().getResource("main.fxml"));
+		Parent home = FXMLLoader.load(getClass().getResource("/src/main/main.fxml"));
 		Scene homeScene = new Scene(home);
 		Stage homeStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 		
@@ -62,7 +81,6 @@ public class FXMLDocumentController implements Initializable {
 		homeStage.show();
 	}
 	
-	@Override
 	public void initialize(URL url, ResourceBundle rb) {
 		
 	}

@@ -1,107 +1,84 @@
 package main;
 
 import java.io.File;
-import java.io.FileReader;
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import java.util.Scanner;
 
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
+import javax.swing.filechooser.FileSystemView;
+
+import jsonFiles.Settings;
+import jsonFiles.SettingsDes;
+import jsonFiles.Statistics;
+import jsonFiles.StatisticsDes;
+
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 public class SaveFiles {
 
 	public static void main() throws IOException {
-		File dir = new File("Kopfrechen Trainer");
+		File dir = new File(FileSystemView.getFileSystemView().getHomeDirectory() + "\\..\\Kopfrechen Trainer");
 		if(!dir.exists()) {
 			dir.mkdir();
 		}
-		File file = new File("Kopfrechen Trainer/stats.txt");
+		File file = new File(FileSystemView.getFileSystemView().getHomeDirectory() + "\\..\\Kopfrechen Trainer\\stats.txt");
 		if(!file.exists()) {
 			file.createNewFile();
-			writeEmpty();
+			writeStats();
+		}
+		File settings = new File(FileSystemView.getFileSystemView().getHomeDirectory() + "\\..\\Kopfrechen Trainer\\settings.txt");
+		if(!settings.exists()) {
+			settings.createNewFile();
+			writeSettings();
 		}
 	}
 	
-	@SuppressWarnings({ "unchecked" })
-	public static void writeEmpty() throws IOException {
-		JSONObject obj = new JSONObject();
-		obj.put("author", "Marcel Struck");
-		
-		JSONArray stats = new JSONArray();
-		stats.add("exercises:0");
-		stats.add("solved:0");
-		obj.put("stats", stats);
-		
-		try (FileWriter file = new FileWriter("Kopfrechen Trainer/stats.txt")) {
-			file.write(obj.toJSONString());
-		}
-	}
-	
-	public static void addOne(boolean solved) {
-		JSONParser parser = new JSONParser();
-		
-		try {
-			Object obj = parser.parse(new FileReader("Kopfrechen Trainer/stats.txt"));
-			JSONObject json = (JSONObject) obj;
-			JSONArray stats = (JSONArray) json.get("stats");
-			@SuppressWarnings("unchecked")
-			Iterator<String> iterator = stats.iterator();
-			List<String> result = new ArrayList<String>();
-			while(iterator.hasNext()) {
-				String[] parts = iterator.next().split(":");
-				result.add(parts[1]);
-			}
-			int ex = Integer.parseInt(result.get(0)) + 1;
-			int exSol = Integer.parseInt(result.get(1));
-			if(solved) {
-				exSol++;
-			}
-			write(ex, exSol);
-		} catch (Exception e) {
+	public static void writeSettings() {
+		Settings obj = new Settings();
+		GsonBuilder gsonBuilder = new GsonBuilder();
+		gsonBuilder.excludeFieldsWithModifiers(java.lang.reflect.Modifier.TRANSIENT);
+		Gson gson = gsonBuilder.create();
+		String json = gson.toJson(obj);
+		try (FileWriter file = new FileWriter(FileSystemView.getFileSystemView().getHomeDirectory() + "\\..\\Kopfrechen Trainer\\settings.txt")) {
+			file.write(json);
+		} catch(Exception e) {
 			e.printStackTrace();
 		}
 	}
 	
-	@SuppressWarnings({ "unchecked" })
-	public static void write(int exercises, int solved) throws IOException {
-		JSONObject obj = new JSONObject();
-		obj.put("author", "KingOfDog");
-		
-		JSONArray stats = new JSONArray();
-		stats.add("exercises:" + exercises);
-		stats.add("solved:" + solved);
-		obj.put("stats", stats);
-		
-		try (FileWriter file = new FileWriter("Kopfrechen Trainer/stats.txt")) {
-			file.write(obj.toJSONString());
-		}
+	public static void getSettings() throws FileNotFoundException {
+		Scanner scanner = new Scanner( new File(FileSystemView.getFileSystemView().getHomeDirectory() + "\\..\\Kopfrechen Trainer\\settings.txt"), "UTF-8" );
+		String text = scanner.useDelimiter("\\A").next();
+		scanner.close();
+		GsonBuilder gsonBuilder = new GsonBuilder();
+		gsonBuilder.registerTypeAdapter(Settings.class, new SettingsDes());
+		Gson gson = gsonBuilder.create();
+		gson.fromJson(text, Settings.class);
 	}
 	
-	public static List<String> read() {
-		JSONParser parser = new JSONParser();
-		
-		try {
-			Object obj = parser.parse(new FileReader("Kopfrechen Trainer/stats.txt"));
-			JSONObject json = (JSONObject) obj;
-			JSONArray stats = (JSONArray) json.get("stats");
-			@SuppressWarnings("unchecked")
-			Iterator<String> iterator = stats.iterator();
-			List<String> result = new ArrayList<String>();
-			
-			while(iterator.hasNext()) {
-				String[] parts = iterator.next().split(":");
-				result.add(parts[1]);
-			}
-			return result;
-		} catch (Exception e) {
+	public static void writeStats() {
+		Statistics obj = new Statistics();
+		GsonBuilder gsonBuilder = new GsonBuilder();
+		gsonBuilder.excludeFieldsWithModifiers(java.lang.reflect.Modifier.TRANSIENT);
+		Gson gson = gsonBuilder.create();
+		String json = gson.toJson(obj);
+		try (FileWriter file = new FileWriter(FileSystemView.getFileSystemView().getHomeDirectory() + "\\..\\Kopfrechen Trainer\\stats.txt")) {
+			file.write(json);
+		} catch(Exception e) {
 			e.printStackTrace();
-			
-			return null;
 		}
+	}
+
+	public static void getStats() throws FileNotFoundException {
+		Scanner scanner = new Scanner( new File(FileSystemView.getFileSystemView().getHomeDirectory() + "\\..\\Kopfrechen Trainer\\stats.txt"), "UTF-8" );
+		String text = scanner.useDelimiter("\\A").next();
+		scanner.close();
+		GsonBuilder gsonBuilder = new GsonBuilder();
+		gsonBuilder.registerTypeAdapter(Statistics.class, new StatisticsDes());
+		Gson gson = gsonBuilder.create();
+		gson.fromJson(text, Statistics.class);
 	}
 	
 }

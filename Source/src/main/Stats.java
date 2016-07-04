@@ -1,10 +1,10 @@
 package main;
 
-import java.util.List;
-
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import jsonFiles.Statistics;
 
+@SuppressWarnings("restriction")
 public class Stats {
 
 	public void start(Scene scene) {
@@ -14,9 +14,8 @@ public class Stats {
 		Label mark = (Label) scene.lookup("#mark");
 		Label markWords = (Label) scene.lookup("#markWords");
 		
-		List<String> data = SaveFiles.read();
-		String ex = data.get(0);
-		String exSo = data.get(1);
+		int ex = Statistics.exercises;
+		int exSo = Statistics.exercisesCorrect;
 		double markPoints = Double.valueOf(exSo) / Double.valueOf(ex) * Double.valueOf(15);
 		String markWord = Marks.main(markPoints);
 		
