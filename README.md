@@ -1,5 +1,7 @@
 # Kopfrechen-Trainer / Mental Arithmetic Trainer
 
+[Wiki](https://github.com/KingOfDog/Kopfrechen-Trainer/wiki)
+
 ## Sprachen / Languages
 - [Deutsch](#deutsch)
 - [English](#english)
