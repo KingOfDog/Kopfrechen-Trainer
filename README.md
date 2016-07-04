@@ -14,9 +14,9 @@ Jetzt kannst du ganz einfach loslegen und deine Kopfrechen-Geschwindigkeit verbe
 ### Funktionen
 Das Programm bietet die Möglichkeit sich im Bereich der Arithmetik abfragen zu lassen. Dazu gehören Additions-, Subtraktions-, Multiplikations- und Divisions-Aufgaben. Diese Aufgaben sollte man dann versuchen möglichst schnell und richtig zu lösen!
 In den Statistiken kann man seinen aktuellen Lernfortschritt einsehen und erfährt die Anzahl der (richtig) gelösten Aufgaben. Daraus berechnet das Programm außerdem eine Schulnote, welche die eigenen Fähigkeiten im schnellen Rechnen ohne Hilfsmittel wiederspiegelt.
+Damit die Aufgaben nicht für immer und ewig auf der gleichen Schwierigkeitsstufe bleiben, gibt es die Möglichkeit in den Einstellungen die Art der Aufgaben, die Größenordnung der Zahlen und Besonderheiten bei den Ergebnissen an- oder auszuschalten bzw. umzustellen!
 
 ### TODO
-- Einstellbarer Schwierigkeitsgrad
 - Verbesserte Statistiken
 - Neues Design
 
