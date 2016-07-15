@@ -23,4 +23,16 @@ Damit die Aufgaben nicht für immer und ewig auf der gleichen Schwierigkeitsstuf
 - Neues Design
 
 ## English
-Welcome on the page of the Mental Artihmetic Trainer by [KingOfDog](http://youtube.com/KingOfDog)!
+Welcome on the page of the Mental Artihmetic Trainer by [KingOfDog](http://youtube.com/KingOfDog)! This application helps you to improve your mental arithmetic skills and to get faster and better.
+
+### Installation
+To get this app just download the newest version from the downloads folder and open the file. Make sure that you've installed the newest version of [Java](http://java.com/download). Now you can start easily and improve your mental arithmetic speed.
+
+### Functions
+This app offers the possibility to getting tested in the sector of mental arithmetic. This contains addition, subtraction, multiplication and division exercises. These exercises you have to solve quickly and correctly.
+In the statistics you can see your current learning level and the number of (correctly) solved exercises. The app computes a school mark which displays your skill level in the mental arithmetics.
+In the settings you can change the difficulty of the generated exercises. Therefor you can modify the kind of exercises, specify the size of numbers and enable or diable special results.
+
+### TODO
+- Improved statistics
+- New design
