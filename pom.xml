@@ -36,5 +36,15 @@
   		<artifactId>org.apache.commons.io</artifactId>
   		<version>2.4</version>
   	</dependency>
+  	<dependency>
+  		<groupId>gson</groupId>
+  		<artifactId>com.google.code.gson</artifactId>
+  		<version>2.7</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>gson-parent</groupId>
+  		<artifactId>com.google.code.gson</artifactId>
+  		<version>2.7.1</version>
+  	</dependency>
   </dependencies>
 </project>
