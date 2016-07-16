@@ -17,10 +17,13 @@ Jetzt kannst du ganz einfach loslegen und deine Kopfrechen-Geschwindigkeit verbe
 Das Programm bietet die Möglichkeit sich im Bereich der Arithmetik abfragen zu lassen. Dazu gehören Additions-, Subtraktions-, Multiplikations- und Divisions-Aufgaben. Diese Aufgaben sollte man dann versuchen möglichst schnell und richtig zu lösen!
 In den Statistiken kann man seinen aktuellen Lernfortschritt einsehen und erfährt die Anzahl der (richtig) gelösten Aufgaben. Daraus berechnet das Programm außerdem eine Schulnote, welche die eigenen Fähigkeiten im schnellen Rechnen ohne Hilfsmittel wiederspiegelt.
 Damit die Aufgaben nicht für immer und ewig auf der gleichen Schwierigkeitsstufe bleiben, gibt es die Möglichkeit in den Einstellungen die Art der Aufgaben, die Größenordnung der Zahlen und Besonderheiten bei den Ergebnissen an- oder auszuschalten bzw. umzustellen!
+Für Anfänger ist es zu empfehlen, negative Ergebnisse und Lösungen mit Dezimalkommastellen zu deaktivieren und den Zahlenbereich beizubehalten oder zu vergeringern.
+Fortgeschrittene und Profis können dann den Zahlenbereich immer mehr ausweiten und sich auch an schwierigere Ergebnisse trauen.
 
 ### TODO
 - Verbesserte Statistiken
 - Neues Design
+- Sounds
 
 ## English
 Welcome on the page of the Mental Artihmetic Trainer by [KingOfDog](http://youtube.com/KingOfDog)! This application helps you to improve your mental arithmetic skills and to get faster and better.
@@ -32,6 +35,8 @@ To get this app just download the newest version from the downloads folder and o
 This app offers the possibility to getting tested in the sector of mental arithmetic. This contains addition, subtraction, multiplication and division exercises. These exercises you have to solve quickly and correctly.
 In the statistics you can see your current learning level and the number of (correctly) solved exercises. The app computes a school mark which displays your skill level in the mental arithmetics.
 In the settings you can change the difficulty of the generated exercises. Therefor you can modify the kind of exercises, specify the size of numbers and enable or diable special results.
+I suggest beginners to disable negative results and solutions with decimal places and to keep the current number zone or decrease the numbers a bit.
+Advanced users or professionals may also increase the number zone and dare to more difficult exercises.
 
 ### TODO
 - Improved statistics
