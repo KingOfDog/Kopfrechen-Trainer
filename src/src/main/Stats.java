@@ -4,7 +4,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import jsonFiles.Statistics;
 
-@SuppressWarnings("restriction")
 public class Stats {
 
 	public void start(Scene scene) {
@@ -13,16 +12,24 @@ public class Stats {
 		Label solved = (Label) scene.lookup("#exercisesSolved");
 		Label mark = (Label) scene.lookup("#mark");
 		Label markWords = (Label) scene.lookup("#markWords");
+		Label time = (Label) scene.lookup("#timePlayed");
 		
-		int ex = Statistics.exercises;
-		int exSo = Statistics.exercisesCorrect;
+		int ex = Statistics.getExercises();
+		int exSo = Statistics.getExercisesCorrect();
 		double markPoints = Double.valueOf(exSo) / Double.valueOf(ex) * Double.valueOf(15);
 		String markWord = Marks.main(markPoints);
+		long timePlayed = Statistics.getMillisecondsPlayed();
+		long second = (timePlayed / 1000) % 60;
+		long minute = (timePlayed / (1000 * 60)) % 60;
+		long hour = (timePlayed / (1000 * 60 * 60)) % 24;
 		
-		exercises.setText("Aufgaben: " + ex);
-		solved.setText("Richtig gelöste Aufgaben: " + exSo);
-		mark.setText("Notenpunkte: " + Double.toString(markPoints));
-		markWords.setText("Note: " + markWord);
+		String timePlayedStr = String.format("%02d:%02d:%02d", hour, minute, second);
+		
+		exercises.setText(String.valueOf(ex));
+		solved.setText(String.valueOf(exSo));
+		mark.setText(String.valueOf(markPoints));
+		markWords.setText(markWord);
+		time.setText(timePlayedStr);
 	}
 	
 }

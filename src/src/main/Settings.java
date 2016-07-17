@@ -1,11 +1,16 @@
 package main;
 
+import java.awt.Choice;
+import java.util.Locale;
+
+import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.scene.Scene;
 import javafx.scene.control.CheckBox;
+import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
-@SuppressWarnings("restriction")
 public class Settings {
 	
 	public static void setDefault(Scene scene) {
@@ -26,6 +31,9 @@ public class Settings {
 		CheckBox subNeg = (CheckBox) scene.lookup("#subNeg");
 		CheckBox divComma = (CheckBox) scene.lookup("#divComma");
 		
+		ChoiceBox language = (ChoiceBox) scene.lookup("#language");
+		Label difficulty = (Label) scene.lookup("#difficulty");
+		
 		add.setSelected(jsonFiles.Settings.add);
 		sub.setSelected(jsonFiles.Settings.sub);
 		mul.setSelected(jsonFiles.Settings.mul);
@@ -40,6 +48,10 @@ public class Settings {
 		divMax.setText(String.valueOf(jsonFiles.Settings.divMax));
 		subNeg.setSelected(jsonFiles.Settings.subNeg);
 		divComma.setSelected(jsonFiles.Settings.divComma);
+		difficulty.setText(String.valueOf(Difficulty.getDifficulty()));
+		language.setItems(FXCollections.observableArrayList("Deutsch", "English"));
+		if(jsonFiles.Settings.lang.equals(new Locale("de", "DE"))) language.getSelectionModel().select(0);
+		else language.getSelectionModel().select(1);
 	}
 	
 	@FXML
@@ -61,6 +73,14 @@ public class Settings {
 		boolean subNeg = ((CheckBox) scene.lookup("#subNeg")).isSelected();
 		boolean divComma = ((CheckBox) scene.lookup("#divComma")).isSelected();
 		
+		String language = (String) ((ChoiceBox) scene.lookup("#language")).getSelectionModel().getSelectedItem();
+		Locale lang;
+		if(language.equals("Deutsch")) {
+			lang = new Locale("de", "DE");
+		} else {
+			lang = new Locale("en", "US");
+		}
+		
 		jsonFiles.Settings.add = add;
 		jsonFiles.Settings.sub = sub;
 		jsonFiles.Settings.mul = mul;
@@ -75,6 +95,8 @@ public class Settings {
 		jsonFiles.Settings.divMax = divMax;
 		jsonFiles.Settings.subNeg = subNeg;
 		jsonFiles.Settings.divComma = divComma;
+		jsonFiles.Settings.lang = lang;
+		System.out.println(jsonFiles.Settings.lang);
 		
 		SaveFiles.writeSettings();
 	}

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane prefHeight="506.0" prefWidth="806.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.FXMLDocumentController">
+   <children>
+    <Button mnemonicParsing="false" onAction="#backHome" text="%back" StackPane.alignment="TOP_LEFT">
+      <tooltip>
+        <Tooltip text="%back_hover" />
+      </tooltip>
+         <StackPane.margin>
+            <Insets left="25.0" top="20.0" />
+         </StackPane.margin>
+    </Button>
+    <Label id="labelTitle" alignment="TOP_CENTER" contentDisplay="CENTER" prefWidth="600.0" text="%your_stats" textAlignment="CENTER" StackPane.alignment="TOP_CENTER">
+      <font>
+        <Font size="20.0" />
+      </font>
+         <StackPane.margin>
+            <Insets top="20.0" />
+         </StackPane.margin>
+    </Label>
+      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="25.0" prefWidth="200.0" text="%st_exer" translateX="-115.0" translateY="-150.0" StackPane.alignment="CENTER">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+    <Label fx:id="exercises" prefHeight="19.0" prefWidth="200.0" text="" translateX="100.0" translateY="-150.0">
+         <font>
+            <Font name="Segoe UI" size="16.0" />
+         </font>
+    </Label>
+      <Label alignment="CENTER_RIGHT" prefWidth="200.0" text="%st_exerSol" textAlignment="RIGHT" translateX="-115.0" translateY="-120.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+    <Label fx:id="exercisesSolved" prefHeight="25.0" prefWidth="200.0" text="" textAlignment="RIGHT" translateX="100.0" translateY="-120.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" prefWidth="200.0" text="%st_markPoints" translateX="-115.0" translateY="-70.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+    <Label fx:id="mark" prefHeight="25.0" prefWidth="200.0" text="" translateX="100.0" translateY="-70.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+    </Label>
+      <Label alignment="CENTER_RIGHT" prefWidth="200.0" text="%st_mark" translateX="-115.0" translateY="-40.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+    <Label fx:id="markWords" prefHeight="25.0" prefWidth="200.0" text="" translateX="100.0" translateY="-40.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+    </Label>
+      <Label fx:id="timePlayed1" alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="200.0" text="%st_timePlayed" translateX="-115.0" translateY="10.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="timePlayed" prefHeight="17.0" prefWidth="200.0" text="" translateX="100.0" translateY="10.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</StackPane>

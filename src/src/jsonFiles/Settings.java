@@ -1,5 +1,7 @@
 package jsonFiles;
 
+import java.util.Locale;
+
 public class Settings {
 	public static boolean add = true;
 	public static boolean sub = true;
@@ -17,6 +19,8 @@ public class Settings {
 	
 	public static boolean subNeg = true;
 	public static boolean divComma = false;
+	
+	public static Locale lang = new Locale("de", "DE");
 	
 	public Settings() {
 		
@@ -43,5 +47,8 @@ public class Settings {
 		divMin = min;
 		divMax = max;
 		divComma = comma;
+	}
+	public void setLang(Locale lang) {
+		this.lang = lang;
 	}
 }

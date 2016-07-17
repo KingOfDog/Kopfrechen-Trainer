@@ -1,6 +1,7 @@
 package jsonFiles;
 
 import java.lang.reflect.Type;
+import java.util.Locale;
 
 import com.google.gson.JsonDeserializationContext;
 import com.google.gson.JsonDeserializer;
@@ -31,11 +32,15 @@ public class SettingsDes implements JsonDeserializer<Settings> {
 		final boolean subNeg = jsonObject.get("subNeg").getAsBoolean();
 		final boolean divComma = jsonObject.get("divComma").getAsBoolean();
 		
+		final String language = jsonObject.get("lang").getAsString();
+		final Locale lang = new Locale(language.split("_")[0], language.split("_")[1]);
+		
 		final Settings settings = new Settings();
 		settings.setAdd(add, addMin, addMax);
 		settings.setSub(sub, subMin, subMax, subNeg);
 		settings.setMul(mul, mulMin, mulMax);
 		settings.setDiv(div, divMin, divMax, divComma);
+		settings.setLang(lang);
 		
 		return settings;
 	}

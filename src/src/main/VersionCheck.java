@@ -7,6 +7,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.lang.reflect.InvocationTargetException;
 import java.net.URI;
 import java.net.URL;
 import java.security.MessageDigest;
@@ -21,7 +22,6 @@ import javafx.scene.control.ButtonType;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.ButtonBar.ButtonData;
 
-@SuppressWarnings("restriction")
 public class VersionCheck {
 
 	public static String version = "1.1";
@@ -30,7 +30,8 @@ public class VersionCheck {
 		URL url = new URL("https://raw.githubusercontent.com/KingOfDog/Kopfrechen-Trainer/master/version.json");
 		BufferedReader reader = null;
 		try {
-			reader = new BufferedReader(new InputStreamReader(url.openStream()));
+			InputStreamReader isr = new InputStreamReader(url.openStream());
+			reader = new BufferedReader(isr);
 			List<String> lines = new ArrayList<String>();
 			String line = null;
 			while((line = reader.readLine()) != null) {
@@ -43,7 +44,6 @@ public class VersionCheck {
 			String[] result = {verNew, path, version_info, check_sum};
 			return result;
 		} catch(Exception e) {
-			e.printStackTrace();
 			return null;
 		} finally {
 			if(reader != null) {
@@ -80,13 +80,18 @@ public class VersionCheck {
 		return result;
 	}
 	
-	public static String[] update() throws IOException {
+	public static String[] update() throws IOException, InvocationTargetException {
 		String[] verInfo = getVersion();
+		if(verInfo == null) {
+			String[] result = {"false", version, version, version, version};
+			return result;
+		}
 		String ver = null;
 		String path = null;
 		String versionInfo = null;
 		String checkSum = null;
 		String update = "false";
+		System.out.println(verInfo.length);
 		if(!version.equals(verInfo[0])) {
 			update = "true";
 			path = verInfo[1];

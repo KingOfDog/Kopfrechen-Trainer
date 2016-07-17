@@ -1,13 +1,17 @@
 package main;
 
 
+import java.util.ResourceBundle;
+
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import javafx.scene.paint.Color;
+import jsonFiles.Settings;
 import jsonFiles.Statistics;
 
-@SuppressWarnings("restriction")
 public class Abfrager {
 	
 	public static String exercise = "";
@@ -17,6 +21,9 @@ public class Abfrager {
 	public static boolean isChecked = false;
 	public static int exercises = 0;
 	public static int correct = 0;
+	public static long timePlayed = 0;
+	
+	private ResourceBundle rb = ResourceBundle.getBundle("lang.lang", Settings.lang);
 	
 	public void start(Scene scene) {
 		generateExercise();
@@ -30,12 +37,12 @@ public class Abfrager {
 		TextField input = (TextField) scene.lookup("#answerInput");
 		labelExercise.setText(exercise);
 		labelExercise.setTextFill(Color.web("#292929"));
-		title.setText("Löse die Aufgaben!");
+		title.setText(rb.getString("exercises_title"));
 		title.setTextFill(Color.web("#292929"));
-		subtitle.setText("Viel Glück!");
+		subtitle.setText(rb.getString("good_luck"));
 		input.setText("");
 		isChecked = false;
-		
+		timePlayed = System.currentTimeMillis();
 	}
 	
 	public static void generateExercise() {
@@ -46,7 +53,9 @@ public class Abfrager {
 		result = Integer.valueOf(returned[0]);
 	}
 	
-	public void check(Scene scene) {
+	public void check(Scene scene) throws Exception {
+		timePlayed = System.currentTimeMillis() - timePlayed;
+		Statistics.addMillisecondsPlayed(timePlayed);
 		TextField input = (TextField) scene.lookup("#answerInput");
 		Integer answer = Integer.valueOf(input.getText());
 		Label labelExercise = (Label) scene.lookup("#exercise");
@@ -55,31 +64,37 @@ public class Abfrager {
 		Label title2 = (Label) scene.lookup("#labelSubheader");
 		
 		exercises++;
-		Statistics.exercises += 1;
+		Statistics.setExercises(Statistics.getExercises() + 1);
 		
 		if(answer == result) {
+			Media sound = new Media(this.getClass().getResource("/sounds/correct.mp3").toExternalForm());
+			MediaPlayer mp = new MediaPlayer(sound);
+			mp.play();
 			labelExercise.setTextFill(Color.web("#2ecc71"));
-			title.setText("Richtig!");
+			title.setText(rb.getString("right"));
 			title.setTextFill(Color.web("#2ecc71"));
-			title2.setText("Gut gemacht!");
+			title2.setText(rb.getString("right_subheader"));
 			correct++;
-			Statistics.exercisesCorrect += 1;
+			Statistics.setExercisesCorrect(Statistics.getExercisesCorrect() + 1);
 		} else {
+			Media sound = new Media(this.getClass().getResource("/sounds/wrong.mp3").toExternalForm());
+			MediaPlayer mp = new MediaPlayer(sound);
+			mp.play();
 			labelExercise.setTextFill(Color.web("#e74c3c"));
-			title.setText("Leider falsch!");
+			title.setText(rb.getString("wrong"));
 			title.setTextFill(Color.web("#e74c3c"));
-			title2.setText("Das wird schon noch!");
+			title2.setText(rb.getString("wrong_subheader"));
 			
 		}		
 		SaveFiles.writeStats();
 		
 		Label exercisesCorrect = (Label) scene.lookup("#exercisesCorrect");
-		exercisesCorrect.setText(correct + " / " + exercises + " Aufgaben richtig gelöst");
+		exercisesCorrect.setText(correct + " / " + exercises);
 		Label mark = (Label) scene.lookup("#mark");
 		double ecp = ((double) correct / (double) exercises) * (double) 15;
 		String note = Marks.main(ecp);
 		
-		mark.setText("Note: " + note);
+		mark.setText(rb.getString("markDoublePoint") + " " + note);
 		
 		isChecked = true;	
 	}

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane prefHeight="506.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.FXMLDocumentController">
+   <children>
+    <Button defaultButton="true" mnemonicParsing="false" onAction="#backHome" text="%back" StackPane.alignment="TOP_LEFT">
+      <tooltip>
+        <Tooltip text="%back_hover" />
+      </tooltip>
+         <StackPane.margin>
+            <Insets left="25.0" top="20.0" />
+         </StackPane.margin>
+    </Button>
+    <Label fx:id="labelTitle" alignment="BOTTOM_CENTER" contentDisplay="CENTER" mouseTransparent="true" prefHeight="45.0" prefWidth="603.0" text="%exercises_title" textAlignment="CENTER" StackPane.alignment="TOP_CENTER">
+      <font>
+        <Font size="30.0" fx:id="x1" />
+      </font>
+         <StackPane.margin>
+            <Insets top="20.0" />
+         </StackPane.margin>
+    </Label>
+    <Label fx:id="labelSubheader" alignment="TOP_CENTER" contentDisplay="CENTER" prefWidth="600.0" text="%good_luck" textAlignment="CENTER" StackPane.alignment="TOP_CENTER">
+      <font>
+        <Font size="12.0" />
+      </font>
+         <StackPane.margin>
+            <Insets top="75.0" />
+         </StackPane.margin>
+    </Label>
+    <Label fx:id="exercise" alignment="CENTER" contentDisplay="CENTER" prefHeight="42.0" prefWidth="600.0" text="Aufgabe" textAlignment="CENTER" translateY="-75.0" wrapText="false" StackPane.alignment="CENTER">
+      <font>
+        <Font size="20.0" />
+      </font>
+    </Label>
+    <TextField fx:id="answerInput" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="43.0" prefWidth="311.0" StackPane.alignment="CENTER">
+      <tooltip>
+        <Tooltip text="%input_hover">
+               <font>
+                  <Font size="16.0" />
+               </font></Tooltip>
+      </tooltip>
+    </TextField>
+    <Button fx:id="submit" alignment="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#submitAnswer" prefHeight="42.0" prefWidth="160.0" text="%finished" textAlignment="LEFT" translateY="75.0" StackPane.alignment="CENTER">
+      <font>
+        <Font name="System Bold" size="16.0" />
+      </font>
+      <tooltip>
+        <Tooltip text="%finished_hover">
+               <font>
+                  <Font size="16.0" />
+               </font></Tooltip>
+      </tooltip>
+    </Button>
+    <Label fx:id="exercisesCorrect" text="0 / 0" translateY="-15.0" StackPane.alignment="BOTTOM_LEFT">
+         <StackPane.margin>
+            <Insets bottom="20.0" left="25.0" />
+         </StackPane.margin>
+      </Label>
+      <Label fx:id="exercisesCorrect1" text="%exercises_right" translateX="40.0" translateY="-15.0" StackPane.alignment="BOTTOM_LEFT">
+         <StackPane.margin>
+            <Insets bottom="20.0" left="25.0" />
+         </StackPane.margin>
+      </Label>
+    <Label fx:id="mark" text="%markDoublePoint" StackPane.alignment="BOTTOM_LEFT">
+         <StackPane.margin>
+            <Insets bottom="20.0" left="25.0" />
+         </StackPane.margin>
+      </Label>
+   </children>
+</StackPane>
