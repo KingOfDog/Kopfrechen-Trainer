@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URI;
 import java.util.Optional;
+import java.util.ResourceBundle;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -16,17 +17,20 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.ButtonBar.ButtonData;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
+import jsonFiles.Settings;
 
-@SuppressWarnings("restriction")
 public class Main extends Application {
 	
 	@Override
 	public void start(Stage stage) throws Exception {
-		Parent root = FXMLLoader.load(getClass().getResource("/src/main/main.fxml"));
+		FXMLLoader loader = new FXMLLoader();
+		ResourceBundle rb = ResourceBundle.getBundle("lang.lang", Settings.lang);
+		loader.setResources(rb);
+		Parent root = loader.load(getClass().getResource("/javafx/main.fxml").openStream());
 		Scene scene = new Scene(root);
 		stage.setScene(scene);
-		stage.getIcons().add(new Image("/src/main/iconWindow.png"));
-		stage.setTitle("Kopfrechen-Trainer");
+		stage.getIcons().add(new Image("/main/iconWindow.png"));
+		stage.setTitle(rb.getString("title"));
 		stage.setMinHeight(450);
 		stage.setMinWidth(650);
 		stage.show();
@@ -59,7 +63,7 @@ public class Main extends Application {
 		}
 	}
 	
-	public static void main(String[] args)  {
+	public static void main(String[] args) throws Exception  {
 		try {
 			SaveFiles.main();
 			SaveFiles.getSettings();

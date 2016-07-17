@@ -3,7 +3,6 @@ package main;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
-import java.io.IOException;
 import java.util.Scanner;
 
 import javax.swing.filechooser.FileSystemView;
@@ -18,7 +17,7 @@ import com.google.gson.GsonBuilder;
 
 public class SaveFiles {
 
-	public static void main() throws IOException {
+	public static void main() throws Exception {
 		File dir = new File(FileSystemView.getFileSystemView().getHomeDirectory() + "\\..\\Kopfrechen Trainer");
 		if(!dir.exists()) {
 			dir.mkdir();
@@ -58,7 +57,8 @@ public class SaveFiles {
 		gson.fromJson(text, Settings.class);
 	}
 	
-	public static void writeStats() {
+	public static void writeStats() throws Exception {
+		Statistics.setSession(Statistics.generateChecksum());
 		Statistics obj = new Statistics();
 		GsonBuilder gsonBuilder = new GsonBuilder();
 		gsonBuilder.excludeFieldsWithModifiers(java.lang.reflect.Modifier.TRANSIENT);
@@ -71,7 +71,7 @@ public class SaveFiles {
 		}
 	}
 
-	public static void getStats() throws FileNotFoundException {
+	public static void getStats() throws Exception {
 		Scanner scanner = new Scanner( new File(FileSystemView.getFileSystemView().getHomeDirectory() + "\\..\\Kopfrechen Trainer\\stats.txt"), "UTF-8" );
 		String text = scanner.useDelimiter("\\A").next();
 		scanner.close();
@@ -79,6 +79,8 @@ public class SaveFiles {
 		gsonBuilder.registerTypeAdapter(Statistics.class, new StatisticsDes());
 		Gson gson = gsonBuilder.create();
 		gson.fromJson(text, Statistics.class);
+		if(!Statistics.generateChecksum().equals(Statistics.getSession())) {
+			Statistics.clear();
+		}
 	}
-	
 }
