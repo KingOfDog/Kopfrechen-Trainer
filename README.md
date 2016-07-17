@@ -27,7 +27,6 @@ Für **Anfänger** ist es zu empfehlen, negative Ergebnisse und Lösungen mit De
 ### TODO
 - Verbesserte Statistiken
 - Neues Design
-- Sounds
 
 ## English
 Welcome on the page of the Mental Artihmetic Trainer by [KingOfDog](http://youtube.com/KingOfDog)! This application helps you to improve your mental arithmetic skills and to get faster and better.
@@ -50,4 +49,3 @@ I suggest **beginners** to disable negative results and solutions with decimal p
 ### TODO
 - Improved statistics
 - New design
-- Sounds
