@@ -24,7 +24,8 @@ import javafx.scene.control.ButtonBar.ButtonData;
 
 public class VersionCheck {
 
-	public static String version = "1.1";
+	//TODO: Change version
+	public static String version = "1.3";
 
 	public static String[] getVersion() throws IOException {
 		URL url = new URL("https://raw.githubusercontent.com/KingOfDog/Kopfrechen-Trainer/master/version.json");
@@ -91,7 +92,6 @@ public class VersionCheck {
 		String versionInfo = null;
 		String checkSum = null;
 		String update = "false";
-		System.out.println(verInfo.length);
 		if(!version.equals(verInfo[0])) {
 			update = "true";
 			path = verInfo[1];
@@ -107,8 +107,6 @@ public class VersionCheck {
 		File file = new File(VersionCheck.class.getProtectionDomain().getCodeSource().getLocation().toURI().getPath() + "\\..\\kopfrechen-trainer-" + version + ".exe");
 		FileUtils.copyURLToFile(new URL(path), file);
 		String checkSumLocal = getMD5Checksum(file);
-		System.out.println(checkSumLocal);
-		System.out.println(checkSum);
 		if(checkSumLocal.equals(checkSum)) {
 			Alert alert = new Alert(AlertType.CONFIRMATION);
 			alert.setTitle("Update erfolgreich!");

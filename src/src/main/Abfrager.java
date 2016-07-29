@@ -3,6 +3,8 @@ package main;
 
 import java.util.ResourceBundle;
 
+import com.jfoenix.controls.JFXTextField;
+
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -23,7 +25,7 @@ public class Abfrager {
 	public static int correct = 0;
 	public static long timePlayed = 0;
 	
-	private ResourceBundle rb = ResourceBundle.getBundle("lang.lang", Settings.lang);
+	private ResourceBundle rb = ResourceBundle.getBundle("resources.lang.lang", Settings.lang);
 	
 	public void start(Scene scene) {
 		generateExercise();
@@ -34,7 +36,7 @@ public class Abfrager {
 		Label labelExercise = (Label) scene.lookup("#exercise");
 		Label title = (Label) scene.lookup("#labelTitle");
 		Label subtitle = (Label) scene.lookup("#labelSubheader");
-		TextField input = (TextField) scene.lookup("#answerInput");
+		JFXTextField input = (JFXTextField) scene.lookup("#answerInput");
 		labelExercise.setText(exercise);
 		labelExercise.setTextFill(Color.web("#292929"));
 		title.setText(rb.getString("exercises_title"));
@@ -67,7 +69,7 @@ public class Abfrager {
 		Statistics.setExercises(Statistics.getExercises() + 1);
 		
 		if(answer == result) {
-			Media sound = new Media(this.getClass().getResource("/sounds/correct.mp3").toExternalForm());
+			Media sound = new Media(this.getClass().getResource("/resources/sounds/correct.mp3").toExternalForm());
 			MediaPlayer mp = new MediaPlayer(sound);
 			mp.play();
 			labelExercise.setTextFill(Color.web("#2ecc71"));
@@ -77,7 +79,7 @@ public class Abfrager {
 			correct++;
 			Statistics.setExercisesCorrect(Statistics.getExercisesCorrect() + 1);
 		} else {
-			Media sound = new Media(this.getClass().getResource("/sounds/wrong.mp3").toExternalForm());
+			Media sound = new Media(this.getClass().getResource("/resources/sounds/wrong.mp3").toExternalForm());
 			MediaPlayer mp = new MediaPlayer(sound);
 			mp.play();
 			labelExercise.setTextFill(Color.web("#e74c3c"));
@@ -94,7 +96,7 @@ public class Abfrager {
 		double ecp = ((double) correct / (double) exercises) * (double) 15;
 		String note = Marks.main(ecp);
 		
-		mark.setText(rb.getString("markDoublePoint") + " " + note);
+		mark.setText(note);
 		
 		isChecked = true;	
 	}

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane fx:id="container" prefHeight="506.0" prefWidth="785.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.FXMLDocumentController">
+   <children>
+    <Button fx:id="backhome" mnemonicParsing="false" onAction="#backHome" text="%back" StackPane.alignment="TOP_LEFT">
+      <tooltip>
+        <Tooltip text="%back_hover" />
+      </tooltip>
+         <StackPane.margin>
+            <Insets left="25.0" top="20.0" />
+         </StackPane.margin>
+    </Button>
+    <Label id="labelTitle" alignment="BOTTOM_CENTER" contentDisplay="CENTER" mouseTransparent="true" prefWidth="600.0" text="%settings" textAlignment="CENTER" StackPane.alignment="TOP_CENTER">
+      <font>
+        <Font size="20.0" />
+      </font>
+         <StackPane.margin>
+            <Insets top="20.0" />
+         </StackPane.margin>
+    </Label>
+      <StackPane StackPane.alignment="CENTER">
+         <children>
+            <StackPane>
+               <children>
+            <CheckBox fx:id="addition" alignment="CENTER_LEFT" indeterminate="false" mnemonicParsing="false" onAction="#newDifficulty" prefHeight="27.0" prefWidth="128.0" selected="true" text="%addition" translateX="-170.0" StackPane.alignment="TOP_CENTER" />
+            <TextField fx:id="addMin" maxWidth="-Infinity" onAction="#newDifficulty" prefWidth="200.0" promptText="%addition_min" StackPane.alignment="TOP_CENTER">
+                     <StackPane.margin>
+                        <Insets />
+                     </StackPane.margin>
+                  </TextField>
+            <TextField fx:id="addMax" maxWidth="-Infinity" onAction="#newDifficulty" prefWidth="200.0" promptText="%addition_max" translateX="210.0" StackPane.alignment="TOP_CENTER" />
+               </children>
+            </StackPane>
+            <StackPane translateY="35.0" StackPane.alignment="TOP_CENTER">
+               <children>
+            <CheckBox fx:id="subtraktion" alignment="CENTER_LEFT" indeterminate="false" mnemonicParsing="false" onAction="#newDifficulty" prefHeight="27.0" prefWidth="128.0" selected="true" text="%subtraction" translateX="-170.0" StackPane.alignment="TOP_CENTER" />
+            <TextField fx:id="subMin" maxWidth="-Infinity" onAction="#newDifficulty" prefWidth="200.0" promptText="%subtraction_min" StackPane.alignment="TOP_CENTER" />
+            <TextField fx:id="subMax" maxWidth="-Infinity" onAction="#newDifficulty" prefWidth="200.0" promptText="%subtraction_max" translateX="210.0" StackPane.alignment="TOP_CENTER" />
+               </children>
+            </StackPane>
+            <StackPane translateY="70.0" StackPane.alignment="TOP_CENTER">
+               <children>
+            <CheckBox fx:id="multiplikation" alignment="CENTER_LEFT" indeterminate="false" mnemonicParsing="false" onAction="#newDifficulty" prefHeight="27.0" prefWidth="128.0" selected="true" text="%multiplication" translateX="-170.0" StackPane.alignment="TOP_CENTER" />
+            <TextField fx:id="mulMin" maxWidth="-Infinity" onAction="#newDifficulty" prefWidth="200.0" promptText="%multiplication_min" StackPane.alignment="TOP_CENTER" />
+            <TextField fx:id="mulMax" maxWidth="-Infinity" onAction="#newDifficulty" prefWidth="200.0" promptText="%multiplication_max" translateX="210.0" StackPane.alignment="TOP_CENTER" />
+               </children>
+            </StackPane>
+            <StackPane translateY="105.0" StackPane.alignment="TOP_CENTER">
+               <children>
+            <CheckBox fx:id="division" alignment="CENTER_LEFT" indeterminate="false" mnemonicParsing="false" onAction="#newDifficulty" prefHeight="27.0" prefWidth="128.0" selected="true" text="%division" translateX="-170.0" StackPane.alignment="TOP_CENTER" />
+            <TextField fx:id="divMin" maxWidth="-Infinity" onAction="#newDifficulty" prefWidth="200.0" promptText="%division_min" StackPane.alignment="TOP_CENTER" />
+            <TextField fx:id="divMax" maxWidth="-Infinity" onAction="#newDifficulty" prefWidth="200.0" promptText="%division_max" translateX="210.0" StackPane.alignment="TOP_CENTER" />
+               </children>
+            </StackPane>
+            <StackPane translateY="140.0" StackPane.alignment="TOP_CENTER">
+               <children>
+            <CheckBox fx:id="subNeg" mnemonicParsing="false" onAction="#newDifficulty" prefHeight="27.0" prefWidth="200.0" selected="true" text="%sub_neg" translateX="-134.0" StackPane.alignment="TOP_CENTER" />
+            <CheckBox fx:id="divComma" mnemonicParsing="false" onAction="#newDifficulty" prefHeight="27.0" prefWidth="280.0" text="%div_comma" translateX="110.0" StackPane.alignment="TOP_CENTER" />
+               </children>
+            </StackPane>
+         </children>
+         <StackPane.margin>
+            <Insets top="125.0" />
+         </StackPane.margin>
+      </StackPane>
+      <Label text="%language" translateX="-100.0" translateY="75.0" />
+      <ChoiceBox fx:id="language" prefWidth="150.0" translateY="75.0" />
+      <Label text="%difficulty" translateX="-200.0" translateY="150.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="difficulty" prefWidth="75.0" translateX="-90.0" translateY="150.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+    <Button defaultButton="true" mnemonicParsing="false" onAction="#saveSettings" text="%save" translateY="150.0" StackPane.alignment="CENTER" />
+   </children>
+</StackPane>

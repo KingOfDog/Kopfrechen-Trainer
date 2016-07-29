@@ -1,0 +1,70 @@
+.label {
+  -fx-font-family: "Roboto Medium";
+  -fx-text-fill: #212121;
+}
+.label-bottom-right {
+  -fx-font-family: "Roboto Medium";
+  -fx-font-size: 16px;
+}
+.title {
+  -fx-font-family: "Roboto Light";
+  -fx-font-size: 28px;
+}
+.subtitle {
+  -fx-font-family: "Roboto Medium";
+  -fx-font-size: 20px;
+}
+.exercise {
+  -fx-font-family: "Roboto Bold";
+  -fx-font-size: 28px;
+}
+.label-light {
+  -fx-font-family: "Roboto Light";
+  -fx-font-size: 18px;
+}
+.label-bold {
+  -fx-font-family: "Roboto Bold";
+  -fx-font-size: 18px;
+}
+
+.jfx-button {
+  -fx-font-size: 14px;
+  -fx-text-fill: WHITE;
+  -fx-font-family: "Roboto Light";
+}
+
+.btn-start {
+  -fx-padding: 15px 20px;
+  -fx-font-size: 18px;
+}
+
+.btn-big {
+  -fx-padding: 15px 20px;
+  -fx-font-size: 16px;
+}
+
+.btn-blue {
+  -fx-background-color: #3F51B5;
+  -fx-text-fill: WHITE;
+  -fx-button-type: RAISED;
+}
+
+.btn-small {
+  -fx-font-size: 12px;
+  -fx-button-type: RAISED;
+}
+
+.btn-back {
+  -fx-padding: 5px;
+}
+
+.input-exercise {
+  -fx-font-size: 20px;
+}
+
+.jfx-text-field {
+  -fx-font-family: "Roboto Medium";
+}
+.jfx-check-box {
+  -fx-font-family: "Roboto Medium";
+}

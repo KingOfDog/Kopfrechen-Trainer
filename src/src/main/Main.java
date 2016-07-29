@@ -5,35 +5,30 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URI;
 import java.util.Optional;
-import java.util.ResourceBundle;
-
+import init.InitMain;
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
+import javafx.scene.image.Image;
+import javafx.scene.text.Font;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.ButtonBar.ButtonData;
-import javafx.scene.image.Image;
 import javafx.stage.Stage;
-import jsonFiles.Settings;
 
 public class Main extends Application {
 	
 	@Override
 	public void start(Stage stage) throws Exception {
-		FXMLLoader loader = new FXMLLoader();
-		ResourceBundle rb = ResourceBundle.getBundle("lang.lang", Settings.lang);
-		loader.setResources(rb);
-		Parent root = loader.load(getClass().getResource("/javafx/main.fxml").openStream());
-		Scene scene = new Scene(root);
-		stage.setScene(scene);
-		stage.getIcons().add(new Image("/main/iconWindow.png"));
-		stage.setTitle(rb.getString("title"));
-		stage.setMinHeight(450);
-		stage.setMinWidth(650);
-		stage.show();
+		stage.setMinHeight(500);
+		stage.setMinWidth(750);
+		stage.setHeight(550);
+		stage.setWidth(750);
+		stage.getIcons().add(new Image("/resources/img/iconWindow.png"));
+		Font.loadFont(getClass().getResource("/resources/fonts/Roboto-Bold.ttf").toExternalForm(), 10);
+		Font.loadFont(getClass().getResource("/resources/fonts/Roboto-Medium.ttf").toExternalForm(), 10);
+		Font.loadFont(getClass().getResource("/resources/fonts/Roboto-Light.ttf").toExternalForm(), 10);
+		InitMain init = new InitMain(stage);
+		init.init();
 		
 		String[] version = VersionCheck.update();
 		boolean update = false;

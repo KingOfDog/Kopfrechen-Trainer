@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:id="container" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="506.0" prefWidth="922.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <JFXTextField fx:id="answerInput" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="300.0" promptText="%input_hover" styleClass="input-exercise">
+         <tooltip>
+            <Tooltip text="%input_hover" />
+         </tooltip></JFXTextField>
+      <JFXButton fx:id="finished" defaultButton="true" text="%finished" translateY="75.0">
+         <styleClass>
+            <String fx:value="btn-blue" />
+            <String fx:value="btn-big" />
+         </styleClass>
+         <tooltip>
+            <Tooltip text="%finished_hover" />
+         </tooltip>
+      </JFXButton>
+      <Label fx:id="exercise" styleClass="exercise" text="Exercise" translateY="-70.0" />
+      <Label fx:id="labelTitle" alignment="CENTER" mouseTransparent="true" prefHeight="34.0" prefWidth="600.0" styleClass="title" text="%exercises_title" StackPane.alignment="TOP_CENTER">
+         <StackPane.margin>
+            <Insets top="15.0" />
+         </StackPane.margin>
+      </Label>
+      <Label fx:id="labelSubheader" alignment="CENTER" mouseTransparent="true" prefHeight="24.0" prefWidth="600.0" styleClass="subtitle" text="%good_luck" translateY="35.0" StackPane.alignment="TOP_CENTER">
+         <StackPane.margin>
+            <Insets top="15.0" />
+         </StackPane.margin>
+      </Label>
+      <Label styleClass="label-light" text="%markDoublePoint" StackPane.alignment="BOTTOM_LEFT">
+         <StackPane.margin>
+            <Insets bottom="5.0" left="5.0" />
+         </StackPane.margin>
+      </Label>
+      <Label fx:id="mark" styleClass="label-bold" translateX="200.0" StackPane.alignment="BOTTOM_LEFT">
+         <StackPane.margin>
+            <Insets bottom="5.0" left="5.0" />
+         </StackPane.margin>
+      </Label>
+      <Label styleClass="label-light" text="%exercises_right" translateY="-20.0" StackPane.alignment="BOTTOM_LEFT">
+         <StackPane.margin>
+            <Insets bottom="5.0" left="5.0" />
+         </StackPane.margin>
+      </Label>
+      <Label fx:id="exercisesCorrect" styleClass="label-bold" translateX="200.0" translateY="-20.0" StackPane.alignment="BOTTOM_LEFT">
+         <StackPane.margin>
+            <Insets bottom="5.0" left="5.0" />
+         </StackPane.margin>
+      </Label>
+   </children>
+</StackPane>

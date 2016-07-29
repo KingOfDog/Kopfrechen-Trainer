@@ -9,5 +9,8 @@
 	<classpathentry kind="lib" path="C:/Users/KingOfDog/IntelliJ Workspace/Mental Arithmetic Trainer/lib/gson-2.7.jar"/>
 	<classpathentry kind="lib" path="C:/Users/KingOfDog/IntelliJ Workspace/Mental Arithmetic Trainer/lib/org.apache.commons.io-2.4.jar"/>
 	<classpathentry kind="lib" path="C:/Users/KingOfDog/IntelliJ Workspace/Mental Arithmetic Trainer/lib/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/KingOfDog/Downloads/jfoenix.jar"/>
+	<classpathentry kind="lib" path="C:/Users/KingOfDog/Downloads/fontawesomefx-commons-8.12.jar"/>
+	<classpathentry kind="lib" path="C:/Users/KingOfDog/Downloads/fontawesomefx-fontawesome-4.6.3.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
