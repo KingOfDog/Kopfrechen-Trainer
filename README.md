@@ -1,16 +1,16 @@
 # Kopfrechen-Trainer / Mental Arithmetic Trainer
 
-[Wiki](https://github.com/KingOfDog/Kopfrechen-Trainer/wiki)
+Go to the official [Mental Arithmetic Trainer Wiki](https://github.com/KingOfDog/Kopfrechen-Trainer/wiki) for getting more information and help!
 
 ## Sprachen / Languages
 - [Deutsch](#deutsch)
 - [English](#english)
 
 ## Deutsch
-Willkommen auf der Seite des Kopfrechen-Trainers von [KingOfDog](http://youtube.com/KingOfDog)! Mit diesem Programm lässt sich das Kopfrechnen ganz einfach lernen bzw. verbessern!
+Willkommen auf der Seite des Kopfrechen-Trainers von [KingOfDog](http://youtube.com/KingOfDog)! Dieses Programm ist dafür konzepiert, deine Fähigkeiten im Kopfrechnen zu verbessern und dir einen besseren Überblick über die Mathematik zu verschaffen.
 
 ### Installation
-Lade einfach die neueste Version des Programms aus dem Download-Ordner runter und öffne die Datei. Stelle dabei sicher, dass du [Java](http://java.com/download) auf der neuesten Version installiert hast!
+Um die Applikation zu starten, [lade einfach die neueste Version runter](https://github.com/KingOfDog/Mental-Arithmetic-Trainer-Math-Game/releases) und öffne die erhaltene Datei. Stelle zuvor sicher, dass die neueste [Java-Version](http://java.com/download) auf deinem PC installiert ist.
 
 Jetzt kannst du ganz einfach loslegen und deine Kopfrechen-Geschwindigkeit verbessern.
 
@@ -26,7 +26,9 @@ Für **Anfänger** ist es zu empfehlen, negative Ergebnisse und Lösungen mit De
 
 ### TODO
 - Verbesserte Statistiken
-- Neues Design
+- Wurzeln und Potenzen als Aufgabenmöglichkeit implementieren
+- Textaufgaben-Modus einfügen
+- Aufgaben mit linearen und quadratischen Funktionen hinzufügen
 
 ## English
 Welcome on the page of the Mental Artihmetic Trainer by [KingOfDog](http://youtube.com/KingOfDog)! This application helps you to improve your mental arithmetic skills and to get faster and better.
@@ -34,7 +36,7 @@ Welcome on the page of the Mental Artihmetic Trainer by [KingOfDog](http://youtu
 ### Installation
 To get this app just download the newest version from the downloads folder and open the file. Make sure that you've installed the newest version of [Java](http://java.com/download). 
 
-Now you can start easily and improve your mental arithmetic speed.
+Now you can start to easily improve your mental arithmetic speed.
 
 ### Functions
 This app offers the possibility to getting tested in the sector of *mental arithmetic*. This contains **addition**, **subtraction**, **multiplication** and **division** exercises. These exercises you have to solve quickly and correctly.
@@ -48,4 +50,6 @@ I suggest **beginners** to disable negative results and solutions with decimal p
 
 ### TODO
 - Improved statistics
-- New design
+- Implementation of root and potencies exercises
+- Add a word problems mode
+- Linear and quadratic functions
