@@ -2,16 +2,17 @@ package init;
 
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
-import java.util.ResourceBundle;
+import resources.lang.Language;
 
 import com.jfoenix.controls.JFXButton;
 
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon;
 import de.jensd.fx.glyphs.fontawesome.utils.FontAwesomeIconFactory;
+import de.jensd.fx.glyphs.materialicons.MaterialIcon;
+import de.jensd.fx.glyphs.materialicons.utils.MaterialIconFactory;
 import javafx.Switch;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
-import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Tooltip;
 import javafx.scene.layout.StackPane;
@@ -30,7 +31,13 @@ public class InitMain {
 		Scene scene = sw.switchScene("/javafx/main.fxml", this.stage);
 		StackPane sp = (StackPane) scene.lookup("#container");
 		
-		JFXButton btnStart = (JFXButton) scene.lookup("#btnStart");
+		InitToolbar itb = new InitToolbar(scene);
+		scene = itb.init(Language.get("home.toolbar"), false, null, stage, "main");
+		
+		JFXButton btnStart = new JFXButton();
+		MaterialIconFactory.get().setIcon(btnStart, MaterialIcon.PLAY_CIRCLE_FILLED, "10em");
+		btnStart.setDefaultButton(true);
+		btnStart.getStyleClass().add("blue-button-icon");
 		btnStart.setOnAction(new EventHandler<ActionEvent>() {
 
 			@Override
@@ -43,13 +50,16 @@ public class InitMain {
 				}
 			}
 		});
+		btnStart.setTooltip(new Tooltip(Language.get("home.hover.play")));
+		sp.getChildren().add(btnStart);
 		
 		// Add settings button
 		JFXButton btnSettings = new JFXButton();
-		FontAwesomeIconFactory.get().setIcon(btnSettings, FontAwesomeIcon.COG, "2em");
-		btnSettings.setTranslateX(-25);
-		btnSettings.setTranslateY(-15);
-		btnSettings.setTooltip(new Tooltip(ResourceBundle.getBundle("resources.lang.lang", jsonFiles.Settings.lang).getString("settings_hover")));
+		FontAwesomeIconFactory.get().setIcon(btnSettings, FontAwesomeIcon.COG, "3.5em");
+		btnSettings.setCancelButton(true);
+		btnSettings.getStyleClass().add("gray-button-icon");
+		btnSettings.setTranslateX(150);
+		btnSettings.setTooltip(new Tooltip(Language.get("home.hover.settings")));
 		btnSettings.setOnAction(new EventHandler<ActionEvent>() {
 			
 			@Override
@@ -64,14 +74,13 @@ public class InitMain {
 			}
 		});
 		sp.getChildren().add(btnSettings);
-		StackPane.setAlignment(btnSettings, Pos.BOTTOM_RIGHT);
 		
 		// Add statistics button
 		JFXButton btnStats = new JFXButton();
-		FontAwesomeIconFactory.get().setIcon(btnStats, FontAwesomeIcon.BAR_CHART, "2em");
-		btnStats.setTranslateX(25);
-		btnStats.setTranslateY(-15);
-		btnStats.setTooltip(new Tooltip(ResourceBundle.getBundle("resources.lang.lang", jsonFiles.Settings.lang).getString("statistics_hover")));
+		FontAwesomeIconFactory.get().setIcon(btnStats, FontAwesomeIcon.BAR_CHART, "3em");
+		btnStats.getStyleClass().add("gray-button-icon");
+		btnStats.setTranslateX(-150);
+		btnStats.setTooltip(new Tooltip(Language.get("home.hover.stats")));
 		btnStats.setOnAction(new EventHandler<ActionEvent>() {
 
 					@Override
@@ -85,7 +94,10 @@ public class InitMain {
 					}
 		});
 		sp.getChildren().add(btnStats);
-		StackPane.setAlignment(btnStats, Pos.BOTTOM_LEFT);
+		
+		btnStart.setTranslateY(15);
+		btnStats.setTranslateY(15);
+		btnSettings.setTranslateY(15);
 		
 		return scene;
 	}

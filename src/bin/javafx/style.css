@@ -33,31 +33,6 @@
   -fx-font-family: "Roboto Light";
 }
 
-.btn-start {
-  -fx-padding: 15px 20px;
-  -fx-font-size: 18px;
-}
-
-.btn-big {
-  -fx-padding: 15px 20px;
-  -fx-font-size: 16px;
-}
-
-.btn-blue {
-  -fx-background-color: #3F51B5;
-  -fx-text-fill: WHITE;
-  -fx-button-type: RAISED;
-}
-
-.btn-small {
-  -fx-font-size: 12px;
-  -fx-button-type: RAISED;
-}
-
-.btn-back {
-  -fx-padding: 5px;
-}
-
 .input-exercise {
   -fx-font-size: 20px;
 }
@@ -67,4 +42,47 @@
 }
 .jfx-check-box {
   -fx-font-family: "Roboto Medium";
+}
+
+.jfx-tool-bar{
+  -fx-background-color: #2196F3;
+}
+.jfx-tool-bar .stack-pane {
+  -fx-padding: 0 15px;
+}
+.jfx-tool-bar .jfx-button {
+  -fx-background-color: transparent;
+}
+.jfx-tool-bar .glyph-icon {
+  -fx-fill: #ffffff;
+  -fx-padding: 0;
+}
+.jfx-tool-bar .label {
+  -fx-text-fill: WHITE;
+  -fx-font-family: "Roboto Bold";
+  -fx-font-size: 25px;
+  -fx-padding: 0 30px;
+}
+
+.blue-button-icon .glyph-icon {
+  -fx-fill: #2196F3;
+  -fx-ripper-fill: #2196F3;
+}
+
+.gray-button-icon .glyph-icon {
+  -fx-fill: #607D8B;
+  -fx-ripper-fill: #607D8B;
+}
+
+.jfx-snackbar-content {
+    -fx-background-color: #323232;
+    -fx-font-size: 14px;
+}
+
+.jfx-snackbar-toast {
+    -fx-text-fill: WHITE;   
+}
+
+.jfx-snackbar-action {
+    -fx-text-fill: #ff4081; 
 }

@@ -14,6 +14,7 @@ import javafx.scene.text.Font;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.ButtonBar.ButtonData;
 import javafx.stage.Stage;
+import resources.lang.Language;
 
 public class Main extends Application {
 	
@@ -38,13 +39,13 @@ public class Main extends Application {
 		
 		if(update) {
 			Alert alert = new Alert(AlertType.INFORMATION);
-			alert.setTitle("Update verfügbar");
-			alert.setHeaderText("Es ist ein Update auf Version " + version[1] + " verfügbar");
-			alert.setContentText("Möchtest du das Update auf Version " + version[1] + " jetzt herunterladen?");
+			alert.setTitle(Language.get("update.available"));
+			alert.setHeaderText(String.format(Language.get("update.available.header"), version[1]));
+			alert.setContentText(String.format(Language.get("update.available.content"), version[1]));
 			
-			ButtonType download = new ButtonType("Ja");
-			ButtonType changelog = new ButtonType("Was ist neu?");
-			ButtonType cancel = new ButtonType("Nein", ButtonData.CANCEL_CLOSE);
+			ButtonType download = new ButtonType(Language.get("update.yes"));
+			ButtonType changelog = new ButtonType(Language.get("update.changes"));
+			ButtonType cancel = new ButtonType(Language.get("update.no"), ButtonData.CANCEL_CLOSE);
 			
 			alert.getButtonTypes().setAll(download, changelog, cancel);
 			Optional<ButtonType> result = alert.showAndWait();

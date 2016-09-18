@@ -49,6 +49,6 @@ public class Settings {
 		divComma = comma;
 	}
 	public void setLang(Locale lang) {
-		this.lang = lang;
+		Settings.lang = lang;
 	}
 }

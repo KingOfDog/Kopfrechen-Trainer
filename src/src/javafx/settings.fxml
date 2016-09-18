@@ -8,68 +8,59 @@
 
 <StackPane fx:id="container" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label alignment="CENTER" mouseTransparent="true" prefHeight="34.0" prefWidth="227.0" styleClass="title" text="%settings" StackPane.alignment="TOP_CENTER">
-         <StackPane.margin>
-            <Insets top="15.0" />
-         </StackPane.margin>
-      </Label>
       <StackPane prefHeight="150.0" prefWidth="200.0">
          <children>
             <StackPane maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="40.0" prefWidth="200.0" translateX="-50.0" translateY="-150.0">
                <children>
-                  <JFXCheckBox fx:id="addition" text="%addition" translateX="-224.0" />
-                  <JFXTextField fx:id="addMin" labelFloat="true" maxWidth="-Infinity" prefWidth="250.0" promptText="%addition_min" translateX="-25.0" />
-                  <JFXTextField fx:id="addMax" labelFloat="true" maxWidth="-Infinity" prefWidth="250.0" promptText="%addition_max" translateX="225.0" />
+                  <JFXCheckBox fx:id="addition" text="%settings.add" translateX="-224.0" />
+                  <JFXTextField fx:id="addMin" labelFloat="true" maxWidth="-Infinity" prefWidth="250.0" promptText="%settings.add.min" translateX="-25.0" />
+                  <JFXTextField fx:id="addMax" labelFloat="true" maxWidth="-Infinity" prefWidth="250.0" promptText="%settings.add.max" translateX="225.0" />
                </children>
             </StackPane>
             <StackPane maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="40.0" prefWidth="200.0" translateX="-50.0" translateY="-110.0">
                <children>
-                  <JFXCheckBox fx:id="subtraction" text="%subtraction" translateX="-215.0" />
-                  <JFXTextField fx:id="subMin" labelFloat="true" maxWidth="-Infinity" prefWidth="250.0" promptText="%subtraction_min" translateX="-25.0" />
-                  <JFXTextField fx:id="subMax" labelFloat="true" maxWidth="-Infinity" prefWidth="250.0" promptText="%subtraction_max" translateX="225.0" />
+                  <JFXCheckBox fx:id="subtraction" text="%settings.sub" translateX="-215.0" />
+                  <JFXTextField fx:id="subMin" labelFloat="true" maxWidth="-Infinity" prefWidth="250.0" promptText="%settings.sub.min" translateX="-25.0" />
+                  <JFXTextField fx:id="subMax" labelFloat="true" maxWidth="-Infinity" prefWidth="250.0" promptText="%settings.sub.max" translateX="225.0" />
                </children>
             </StackPane>
             <StackPane maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="40.0" prefWidth="200.0" translateX="-50.0" translateY="-70.0">
                <children>
-                  <JFXCheckBox fx:id="multiplication" text="%multiplication" translateX="-210.0" />
-                  <JFXTextField fx:id="mulMin" labelFloat="true" maxWidth="-Infinity" prefWidth="250.0" promptText="%multiplication_min" translateX="-25.0" />
-                  <JFXTextField fx:id="mulMax" labelFloat="true" maxWidth="-Infinity" prefWidth="250.0" promptText="%multiplication_max" translateX="225.0" />
+                  <JFXCheckBox fx:id="multiplication" text="%settings.mul" translateX="-210.0" />
+                  <JFXTextField fx:id="mulMin" labelFloat="true" maxWidth="-Infinity" prefWidth="250.0" promptText="%settings.mul.min" translateX="-25.0" />
+                  <JFXTextField fx:id="mulMax" labelFloat="true" maxWidth="-Infinity" prefWidth="250.0" promptText="%settings.mul.max" translateX="225.0" />
                </children>
             </StackPane>
             <StackPane maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="40.0" prefWidth="200.0" translateX="-50.0" translateY="-30.0">
                <children>
-                  <JFXCheckBox fx:id="division" text="%division" translateX="-225.0" />
-                  <JFXTextField fx:id="divMin" labelFloat="true" maxWidth="-Infinity" prefWidth="250.0" promptText="%division_min" translateX="-25.0" />
-                  <JFXTextField fx:id="divMax" labelFloat="true" maxWidth="-Infinity" prefWidth="250.0" promptText="%division_max" translateX="225.0" />
+                  <JFXCheckBox fx:id="division" text="%settings.div" translateX="-225.0" />
+                  <JFXTextField fx:id="divMin" labelFloat="true" maxWidth="-Infinity" prefWidth="250.0" promptText="%settings.div.min" translateX="-25.0" />
+                  <JFXTextField fx:id="divMax" labelFloat="true" maxWidth="-Infinity" prefWidth="250.0" promptText="%settings.div.max" translateX="225.0" />
                </children>
             </StackPane>
             <StackPane maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="40.0" prefWidth="200.0" translateX="-50.0" translateY="10.0">
                <children>
-                  <JFXCheckBox fx:id="subNeg" prefHeight="15.0" prefWidth="317.0" text="%sub_neg" translateX="-111.0" />
-                  <JFXCheckBox fx:id="divComma" prefHeight="15.0" prefWidth="374.0" text="%div_comma" translateX="150.0" />
+                  <JFXCheckBox fx:id="subNeg" prefHeight="15.0" prefWidth="317.0" text="%settings.sub.neg" translateX="-111.0" />
+                  <JFXCheckBox fx:id="divComma" prefHeight="15.0" prefWidth="374.0" text="%settings.div.dec" translateX="175.0" />
                </children>
             </StackPane>
-            <StackPane maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="40.0" prefWidth="200.0" translateY="50.0">
+            <StackPane maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="80.0" prefWidth="200.0" translateY="80.0">
                <children>
-                  <Label text="%language" translateX="-250.0" />
-                  <JFXComboBox fx:id="language" promptText="%language" translateX="-170.0" />
+                  <Label text="%settings.language" translateX="-250.0" StackPane.alignment="TOP_CENTER" />
+                  <JFXComboBox fx:id="language" promptText="%settings.language" translateX="-170.0" StackPane.alignment="TOP_CENTER" />
+                  <Label maxWidth="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="610.0" text="%settings.language.note" wrapText="true" StackPane.alignment="BOTTOM_CENTER" />
                </children>
             </StackPane>
-            <Label prefHeight="29.0" prefWidth="154.0" styleClass="label-light" text="%difficulty" translateX="-235.0" StackPane.alignment="BOTTOM_CENTER">
+            <Label prefHeight="29.0" prefWidth="154.0" styleClass="label-light" text="%settings.difficulty" translateX="-235.0" translateY="30.0" StackPane.alignment="BOTTOM_CENTER">
                <StackPane.margin>
                   <Insets bottom="100.0" />
                </StackPane.margin>
             </Label>
-            <Label fx:id="difficulty" prefHeight="29.0" prefWidth="105.0" styleClass="label-light" translateX="-100.0" StackPane.alignment="BOTTOM_CENTER">
+            <Label fx:id="difficulty" prefHeight="29.0" prefWidth="105.0" styleClass="label-light" translateX="-100.0" translateY="30.0" StackPane.alignment="BOTTOM_CENTER">
                <StackPane.margin>
                   <Insets bottom="100.0" />
                </StackPane.margin>
             </Label>
-            <JFXButton fx:id="save" styleClass="btn-blue" text="%save" StackPane.alignment="BOTTOM_CENTER">
-               <StackPane.margin>
-                  <Insets bottom="100.0" />
-               </StackPane.margin>
-            </JFXButton>
          </children>
       </StackPane>
    </children>

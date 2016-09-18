@@ -1,14 +1,20 @@
 package main;
 
+import java.io.IOException;
 import java.util.Locale;
 
 import com.jfoenix.controls.JFXCheckBox;
 import com.jfoenix.controls.JFXComboBox;
+import com.jfoenix.controls.JFXSnackbar;
 import com.jfoenix.controls.JFXTextField;
 
+import init.InitSettings;
 import javafx.fxml.FXML;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.layout.StackPane;
+import javafx.stage.Stage;
+import resources.lang.Language;
 
 public class Settings {
 	
@@ -51,11 +57,29 @@ public class Settings {
 		difficulty.setText(String.valueOf(Difficulty.getDifficulty()));
 		language.getItems().add(new Label("Deutsch"));
 		language.getItems().add(new Label("English"));
+		language.getItems().add(new Label("Français"));
 		if(jsonFiles.Settings.lang.equals(new Locale("de", "DE"))) language.getSelectionModel().select(0);
+		else if(jsonFiles.Settings.lang.equals(new Locale("fr", "FR"))) language.getSelectionModel().select(2);
 		else language.getSelectionModel().select(1);
 	}
 	
 	@FXML
+	public static void updateAndSave(Scene scene, StackPane sp, Stage stage) {	
+		update(scene);
+		
+		SaveFiles.writeSettings();
+		
+		JFXSnackbar notify = new JFXSnackbar(sp);
+		notify.show(Language.get("settings.saved"), 5000);
+		
+		InitSettings init = new InitSettings(stage);
+		try {
+			init.init();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
 	public static void update(Scene scene) {
 		boolean add = ((JFXCheckBox) scene.lookup("#addition")).isSelected();
 		boolean sub = ((JFXCheckBox) scene.lookup("#subtraction")).isSelected();
@@ -79,6 +103,8 @@ public class Settings {
 		Locale lang;
 		if(language.equals("Deutsch")) {
 			lang = new Locale("de", "DE");
+		} else if(language.equals("Français")) {
+			lang = new Locale("fr", "FR");
 		} else {
 			lang = new Locale("en", "US");
 		}
@@ -98,8 +124,6 @@ public class Settings {
 		jsonFiles.Settings.subNeg = subNeg;
 		jsonFiles.Settings.divComma = divComma;
 		jsonFiles.Settings.lang = lang;
-		
-		SaveFiles.writeSettings();
 	}
 	
 }

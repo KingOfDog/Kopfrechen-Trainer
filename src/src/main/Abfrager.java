@@ -1,8 +1,6 @@
 package main;
 
 
-import java.util.ResourceBundle;
-
 import com.jfoenix.controls.JFXTextField;
 
 import javafx.scene.Scene;
@@ -11,8 +9,8 @@ import javafx.scene.control.TextField;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.paint.Color;
-import jsonFiles.Settings;
 import jsonFiles.Statistics;
+import resources.lang.Language;
 
 public class Abfrager {
 	
@@ -24,8 +22,6 @@ public class Abfrager {
 	public static int exercises = 0;
 	public static int correct = 0;
 	public static long timePlayed = 0;
-	
-	private ResourceBundle rb = ResourceBundle.getBundle("resources.lang.lang", Settings.lang);
 	
 	public void start(Scene scene) {
 		generateExercise();
@@ -39,9 +35,9 @@ public class Abfrager {
 		JFXTextField input = (JFXTextField) scene.lookup("#answerInput");
 		labelExercise.setText(exercise);
 		labelExercise.setTextFill(Color.web("#292929"));
-		title.setText(rb.getString("exercises_title"));
+		title.setText(Language.get("test.title"));
 		title.setTextFill(Color.web("#292929"));
-		subtitle.setText(rb.getString("good_luck"));
+		subtitle.setText(Language.get("test.subtitle"));
 		input.setText("");
 		isChecked = false;
 		timePlayed = System.currentTimeMillis();
@@ -73,9 +69,9 @@ public class Abfrager {
 			MediaPlayer mp = new MediaPlayer(sound);
 			mp.play();
 			labelExercise.setTextFill(Color.web("#2ecc71"));
-			title.setText(rb.getString("right"));
+			title.setText(Language.get("test.title.correct"));
 			title.setTextFill(Color.web("#2ecc71"));
-			title2.setText(rb.getString("right_subheader"));
+			title2.setText(Language.get("test.subtitle.correct"));
 			correct++;
 			Statistics.setExercisesCorrect(Statistics.getExercisesCorrect() + 1);
 		} else {
@@ -83,9 +79,9 @@ public class Abfrager {
 			MediaPlayer mp = new MediaPlayer(sound);
 			mp.play();
 			labelExercise.setTextFill(Color.web("#e74c3c"));
-			title.setText(rb.getString("wrong"));
+			title.setText(Language.get("test.title.wrong"));
 			title.setTextFill(Color.web("#e74c3c"));
-			title2.setText(rb.getString("wrong_subheader"));
+			title2.setText(Language.get("test.subtitle.wrong"));
 			
 		}		
 		SaveFiles.writeStats();

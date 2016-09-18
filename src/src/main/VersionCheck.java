@@ -19,13 +19,14 @@ import org.apache.commons.io.FileUtils;
 
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
+import resources.lang.Language;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.ButtonBar.ButtonData;
 
 public class VersionCheck {
 
 	//TODO: Change version
-	public static String version = "1.3";
+	public static String version = "1.4";
 
 	public static String[] getVersion() throws IOException {
 		URL url = new URL("https://raw.githubusercontent.com/KingOfDog/Kopfrechen-Trainer/master/version.json");
@@ -109,12 +110,12 @@ public class VersionCheck {
 		String checkSumLocal = getMD5Checksum(file);
 		if(checkSumLocal.equals(checkSum)) {
 			Alert alert = new Alert(AlertType.CONFIRMATION);
-			alert.setTitle("Update erfolgreich!");
-			alert.setHeaderText("Update auf Version " + version + " erfolgreich");
-			alert.setContentText("Das Update auf die Version " + version + " war erfolreich!");
+			alert.setTitle(Language.get("update.success"));
+			alert.setHeaderText(String.format(Language.get("update.success.header"), version));
+			alert.setContentText(String.format(Language.get("update.success.content"), version));
 			
-			ButtonType newVersion = new ButtonType("Neue Version öffnen", ButtonData.APPLY);
-			ButtonType oldVersion = new ButtonType("Mit alter Version fortfahren", ButtonData.CANCEL_CLOSE);
+			ButtonType newVersion = new ButtonType(Language.get("update.version.new"), ButtonData.APPLY);
+			ButtonType oldVersion = new ButtonType(Language.get("update.version.old"), ButtonData.CANCEL_CLOSE);
 			
 			alert.getButtonTypes().setAll(newVersion, oldVersion);
 			Optional<ButtonType> result = alert.showAndWait();
@@ -128,12 +129,12 @@ public class VersionCheck {
 			}
 		} else {
 			Alert alert = new Alert(AlertType.ERROR);
-			alert.setTitle("Update fehlgeschlagen");
-			alert.setHeaderText("Das Update ist fehlgeschlagen");
-			alert.setContentText("Bitte versuche es später erneut oder lade das Update manuell runter");
+			alert.setTitle(Language.get("update.failed"));
+			alert.setHeaderText(String.format(Language.get("update.failed.header"), version));
+			alert.setContentText(Language.get("update.failed.content"));
 			
-			ButtonType link = new ButtonType("Manuell installieren");
-			ButtonType cancel = new ButtonType("Abbrechen", ButtonData.CANCEL_CLOSE);
+			ButtonType link = new ButtonType(Language.get("update.download"));
+			ButtonType cancel = new ButtonType(Language.get("update.cancel"), ButtonData.CANCEL_CLOSE);
 			
 			alert.getButtonTypes().setAll(link, cancel);
 			Optional<ButtonType> result = alert.showAndWait();

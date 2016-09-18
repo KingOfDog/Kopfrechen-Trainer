@@ -20,10 +20,10 @@ public class StatisticsDes implements JsonDeserializer<Statistics> {
 		final String session = jsonObject.get("session").getAsString();
 		
 		final Statistics stats = new Statistics();
-		stats.setExercises(ex);
-		stats.setExercisesCorrect(exCor);
-		stats.setMillisecondsPlayed(milPlay);
-		stats.setSession(session);
+		Statistics.setExercises(ex);
+		Statistics.setExercisesCorrect(exCor);
+		Statistics.setMillisecondsPlayed(milPlay);
+		Statistics.setSession(session);
 		
 		return stats;
 	}
