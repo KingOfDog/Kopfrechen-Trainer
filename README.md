@@ -1,16 +1,16 @@
-# Kopfrechen-Trainer / Mental Arithmetic Trainer
+# MATH - Your math training game
 
-Go to the official [Mental Arithmetic Trainer Wiki](https://github.com/KingOfDog/Kopfrechen-Trainer/wiki) for getting more information and help!
+Go to the official [MATH Wiki](https://github.com/KingOfDog/MATH/wiki) for getting more information and help!
 
 ## Sprachen / Languages
 - [Deutsch](#deutsch)
 - [English](#english)
 
 ## Deutsch
-Willkommen auf der Seite des Kopfrechen-Trainers von [KingOfDog](http://youtube.com/KingOfDog)! Dieses Programm ist dafür konzepiert, deine Fähigkeiten im Kopfrechnen zu verbessern und dir einen besseren Überblick über die Mathematik zu verschaffen.
+Willkommen auf der Seite des MATH Games von [KingOfDog](http://youtube.com/KingOfDog)! Dieses Programm ist dafür konzepiert, deine Fähigkeiten im Kopfrechnen zu verbessern und dir einen besseren Überblick über die Mathematik zu verschaffen.
 
 ### Installation
-Um die Applikation zu starten, [lade einfach die neueste Version runter](https://github.com/KingOfDog/Mental-Arithmetic-Trainer-Math-Game/releases) und öffne die erhaltene Datei. Stelle zuvor sicher, dass die neueste [Java-Version](http://java.com/download) auf deinem PC installiert ist.
+Um die Applikation zu starten, [lade einfach die neueste Version runter](https://github.com/KingOfDog/MATH/releases) und öffne die erhaltene Datei. Stelle zuvor sicher, dass die neueste [Java-Version](http://java.com/download) auf deinem PC installiert ist.
 
 Jetzt kannst du ganz einfach loslegen und deine Kopfrechen-Geschwindigkeit verbessern.
 
