@@ -6,8 +6,6 @@ import resources.lang.Language;
 
 import com.jfoenix.controls.JFXButton;
 
-import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon;
-import de.jensd.fx.glyphs.fontawesome.utils.FontAwesomeIconFactory;
 import de.jensd.fx.glyphs.materialicons.MaterialIcon;
 import de.jensd.fx.glyphs.materialicons.utils.MaterialIconFactory;
 import handlers.SceneHandler;
@@ -55,7 +53,7 @@ public class InitMain {
 		
 		// Add settings button
 		JFXButton btnSettings = new JFXButton();
-		FontAwesomeIconFactory.get().setIcon(btnSettings, FontAwesomeIcon.COG, "3.5em");
+		MaterialIconFactory.get().setIcon(btnSettings, MaterialIcon.SETTINGS, "3.5em");
 		btnSettings.setCancelButton(true);
 		btnSettings.setTranslateX(150);
 		btnSettings.setTooltip(new Tooltip(Language.get("home.hover.settings")));
@@ -76,7 +74,7 @@ public class InitMain {
 		
 		// Add statistics button
 		JFXButton btnStats = new JFXButton();
-		FontAwesomeIconFactory.get().setIcon(btnStats, FontAwesomeIcon.BAR_CHART, "3em");
+		MaterialIconFactory.get().setIcon(btnStats, MaterialIcon.EQUALIZER, "3em");
 		btnStats.setTranslateX(-150);
 		btnStats.setTooltip(new Tooltip(Language.get("home.hover.stats")));
 		btnStats.setOnAction(new EventHandler<ActionEvent>() {

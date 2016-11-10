@@ -1,0 +1,20 @@
+.jfx-tool-bar{
+  	-fx-background-color: #2196F3;
+}
+.jfx-tool-bar .stack-pane {
+	-fx-background-color: #000000;
+	-fx-padding: 0 15px;
+}
+.jfx-tool-bar .jfx-button {
+  	-fx-background-color: transparent;
+}
+.jfx-tool-bar .glyph-icon {
+  	-fx-fill: #ffffff;
+  	-fx-padding: 0;
+}
+.jfx-tool-bar .label {
+  	-fx-text-fill: WHITE;
+  	-fx-font-family: "Roboto Bold";
+  	-fx-font-size: 25px;
+  	-fx-padding: 0 30px;
+}
