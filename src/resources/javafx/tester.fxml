@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import com.jfoenix.validation.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:id="container" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="506.0" prefWidth="922.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="labelTitle" alignment="CENTER" mouseTransparent="true" prefHeight="34.0" prefWidth="600.0" text="%test.title" translateY="50.0" StackPane.alignment="TOP_CENTER">
+         <StackPane.margin>
+            <Insets top="15.0" />
+         </StackPane.margin>
+         <styleClass>
+            <String fx:value="title" />
+            <String fx:value="label-bold" />
+         </styleClass>
+      </Label>
+      <Label fx:id="labelSubheader" alignment="CENTER" mouseTransparent="true" prefHeight="24.0" prefWidth="600.0" styleClass="subtitle" text="%test.subtitle" translateY="85.0" StackPane.alignment="TOP_CENTER">
+         <StackPane.margin>
+            <Insets top="15.0" />
+         </StackPane.margin>
+      </Label>
+      <Label fx:id="exercise" alignment="CENTER" prefHeight="17.0" styleClass="exercise" text="Exercise" textAlignment="CENTER" translateY="-60.0" />
+      <JFXTextField fx:id="answerInput" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="300.0" promptText="%test.input" translateY="25.0">
+         <tooltip>
+            <Tooltip text="%test.input.hover" />
+         </tooltip></JFXTextField>
+      <Group translateX="20.0" translateY="-70.0" StackPane.alignment="BOTTOM_LEFT">
+         <children>
+            <Label prefHeight="25.0" prefWidth="200.0" text="%test.stats.exercises" translateX="-100.0" />
+            <Label fx:id="exercisesCorrect" prefHeight="25.0" styleClass="label-bold" translateX="100.0" />
+         </children>
+      </Group>
+      <Group translateX="20.0" translateY="-40.0" StackPane.alignment="BOTTOM_LEFT">
+         <children>
+            <Label prefHeight="25.0" prefWidth="200.0" text="%test.stats.mark" translateX="-100.0" />
+            <Label fx:id="mark" prefHeight="25.0" styleClass="label-bold" translateX="100.0" />
+         </children>
+      </Group>
+      <Group translateX="20.0" translateY="-10.0" StackPane.alignment="BOTTOM_LEFT">
+         <children>
+            <Label prefHeight="25.0" prefWidth="200.0" text="%test.stats.difficulty" translateX="-100.0" />
+            <Label fx:id="currentDifficulty" prefHeight="25.0" styleClass="label-bold" translateX="100.0" />
+         </children>
+      </Group>
+   </children>
+</StackPane>

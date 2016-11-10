@@ -1,0 +1,23 @@
+.label {
+	-fx-font-family: "Roboto Light", Arial, sans-serif;
+	-fx-font-size: 14px;
+	-fx-text-fill: #424242;
+}
+
+.jfx-button {
+	-fx-button-type: RAISED;
+	-fx-background-color: #00e676;
+}
+
+.jfx-button .jfx-rippler {
+	-fx-rippler-fill: #00c853;
+}
+
+.cc-icons {
+  -fx-text-fill: #ABB3AC;
+  -fx-font-family: "CC Icons";
+  -fx-font-size: 40px;
+}
+.cc-icon-big {
+  -fx-font-size: 55px;
+}
