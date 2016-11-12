@@ -1,33 +1,27 @@
 package main;
 
-import java.awt.Desktop;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.net.URI;
-import java.util.Optional;
-
 import handlers.FileHandler;
 import initializers.InitMain;
 import javafx.application.Application;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Alert.AlertType;
-import javafx.scene.control.ButtonBar.ButtonData;
-import javafx.scene.control.ButtonType;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
-import resources.lang.Language;
 import settings.Settings;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
 public class Main extends Application {
+
+	private Settings settings = Settings.getInstance();
 	
 	@Override
 	public void start(Stage stage) throws Exception {
 //		Initialize the window and set it's width, height, title and icon 
 		stage.setMinHeight(450);
 		stage.setMinWidth(700);
-		stage.setHeight(Settings.startHeight);
-		stage.setWidth(Settings.startWidth);
-		stage.setMaximized(Settings.startMaximized);
+		stage.setHeight(settings.startHeight);
+		stage.setWidth(settings.startWidth);
+		stage.setMaximized(settings.startMaximized);
 		stage.getIcons().add(new Image("/resources/img/icon.png"));
 		stage.setTitle("MATH - Math training game");
 		
@@ -36,7 +30,7 @@ public class Main extends Application {
 		init.init();
 		
 //		Search for updates and send notification if new version is available
-		if(Settings.automaticUpdates) {
+		if(settings.automaticUpdates) {
 //			String[] version = UpdateHandler.update();
 //			boolean update = false;
 //			if(version[0] == "true") {

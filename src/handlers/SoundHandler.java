@@ -8,11 +8,7 @@ public class SoundHandler {
 
 	private boolean sounds;
 	private double volume;
-	
-	public SoundHandler() {
-		this(Settings.sounds, Settings.volume);
-	}
-	
+
 	public SoundHandler(boolean sounds, double volume) {
 		this.sounds = sounds;
 		this.volume = volume;

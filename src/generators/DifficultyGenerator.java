@@ -4,95 +4,97 @@ import settings.Settings;
 
 public class DifficultyGenerator {
 
-	public static double getDifficulty() {
-		return (addsub() + muldiv()) * factor() / 100;
-	}
+    private static Settings settings = Settings.getInstance();
 
-	private static double addsub() {
-		double factor = 1.25 + subNeg();
-		double result = (addition() + subtraction()) / 2 * factor;
-		return result;
-	}
+    public static double getDifficulty() {
+        return (addsub() + muldiv()) * factor() / 100;
+    }
 
-	private static double addition() {
-		if (!Settings.add)
-			return 0;
-		return (Settings.addMin + Settings.addMin) / 2;
-	}
+    private static double addsub() {
+        double factor = 1.25 + subNeg();
+        double result = (addition() + subtraction()) / 2 * factor;
+        return result;
+    }
 
-	private static double additionRange() {
-		if (!Settings.add)
-			return 0;
-		return Settings.addMax - Settings.addMin;
-	}
+    private static double addition() {
+        if (!settings.add.getValue())
+            return 0;
+        return (settings.addMin.getValue() + settings.addMax.getValue()) / 2;
+    }
 
-	private static double subtraction() {
-		if (!Settings.sub)
-			return 0;
-		return (Settings.subMin + Settings.subMax) / 2;
-	}
+    private static double additionRange() {
+        if (!settings.add.getValue())
+            return 0;
+        return settings.addMax.getValue() - settings.addMin.getValue();
+    }
 
-	private static double subtractionRange() {
-		if (!Settings.sub)
-			return 0;
-		return Settings.subMax - Settings.subMin;
-	}
+    private static double subtraction() {
+        if (!settings.sub.getValue())
+            return 0;
+        return (settings.subMin.getValue() + settings.subMax.getValue()) / 2;
+    }
 
-	private static double subNeg() {
-		if (Settings.subNeg)
-			return 1.5;
-		return 0;
-	}
+    private static double subtractionRange() {
+        if (!settings.sub.getValue())
+            return 0;
+        return settings.subMax.getValue() - settings.subMin.getValue();
+    }
 
-	private static double muldiv() {
-		double factor = 1.5 + divDec();
-		double result = (multiplication() + division()) / 2 * factor;
-		return result;
-	}
+    private static double subNeg() {
+        if (settings.subNeg.getValue())
+            return 1.5;
+        return 0;
+    }
 
-	private static double multiplication() {
-		if (!Settings.mul)
-			return 0;
-		return (Settings.mulMin + Settings.mulMax) / 2;
-	}
+    private static double muldiv() {
+        double factor = 1.5 + divDec();
+        double result = (multiplication() + division()) / 2 * factor;
+        return result;
+    }
 
-	private static double multiplicationRange() {
-		if (!Settings.mul)
-			return 0;
-		return Settings.mulMax - Settings.mulMin;
-	}
+    private static double multiplication() {
+        if (!settings.mul.getValue())
+            return 0;
+        return (settings.mulMin.getValue() + settings.mulMax.getValue()) / 2;
+    }
 
-	private static double division() {
-		if (!Settings.div)
-			return 0;
-		return (Settings.divMin + Settings.divMax) / 2;
-	}
+    private static double multiplicationRange() {
+        if (!settings.mul.getValue())
+            return 0;
+        return settings.mulMax.getValue() - settings.mulMin.getValue();
+    }
 
-	private static double divisionRange() {
-		if (!Settings.div)
-			return 0;
-		return Settings.divMax - Settings.divMin;
-	}
+    private static double division() {
+        if (!settings.div.getValue())
+            return 0;
+        return (settings.divMin.getValue() + settings.divMax.getValue()) / 2;
+    }
 
-	private static double divDec() {
-		if (Settings.divComma)
-			return 2;
-		return 0;
-	}
+    private static double divisionRange() {
+        if (!settings.div.getValue())
+            return 0;
+        return settings.divMax.getValue() - settings.divMin.getValue();
+    }
 
-	private static double factor() {
-		double averageRange = (additionRange() + subtractionRange() + multiplicationRange() + divisionRange()) / 4;
-		double rangeFactor = 1;
-		if (averageRange < 600) {
-			rangeFactor = 1.5;
-		} else if (averageRange <= 800) {
-			rangeFactor = 2;
-		} else if (averageRange <= 1000) {
-			rangeFactor = 3;
-		} else if (averageRange > 1000) {
-			rangeFactor = 4;
-		}
-		double factorCount = Settings.factorCount / 2;
-		return rangeFactor + factorCount;
-	}
+    private static double divDec() {
+        if (settings.divDec.getValue())
+            return 2;
+        return 0;
+    }
+
+    private static double factor() {
+        double averageRange = (additionRange() + subtractionRange() + multiplicationRange() + divisionRange()) / 4;
+        double rangeFactor = 1;
+        if (averageRange < 600) {
+            rangeFactor = 1.5;
+        } else if (averageRange <= 800) {
+            rangeFactor = 2;
+        } else if (averageRange <= 1000) {
+            rangeFactor = 3;
+        } else if (averageRange > 1000) {
+            rangeFactor = 4;
+        }
+        double factorCount = settings.factorCount.getValue() / 2;
+        return rangeFactor + factorCount;
+    }
 }

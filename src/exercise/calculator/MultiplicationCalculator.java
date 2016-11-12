@@ -4,6 +4,8 @@ import settings.Settings;
 
 public class MultiplicationCalculator implements Calculator {
 
+	private Settings settings = Settings.getInstance();
+
 	@Override
 	public float calculate(float a, float b) {
 		return a * b;
@@ -11,17 +13,17 @@ public class MultiplicationCalculator implements Calculator {
 
 	@Override
 	public char getOperatorSign() {
-		return '×';
+		return 'ï¿½';
 	}
 
 	@Override
 	public int minimumBound() {
-		return Settings.mulMin;
+		return settings.mulMin.getValue();
 	}
 
 	@Override
 	public int maximumBound() {
-		return Settings.mulMax;
+		return settings.mulMax.getValue();
 	}
 
 	@Override

@@ -4,6 +4,8 @@ import settings.Settings;
 
 public class AdditionCalculator implements Calculator {
 
+	private Settings settings = Settings.getInstance();
+
 	@Override
 	public float calculate(float a, float b) {
 		return a + b;
@@ -16,12 +18,12 @@ public class AdditionCalculator implements Calculator {
 
 	@Override
 	public int minimumBound() {
-		return Settings.addMin;
+		return settings.addMin.getValue();
 	}
 
 	@Override
 	public int maximumBound() {
-		return Settings.addMax;
+		return settings.addMax.getValue();
 	}
 
 	@Override

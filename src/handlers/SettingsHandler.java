@@ -10,89 +10,89 @@ import com.jfoenix.controls.JFXTextField;
 
 import initializers.InitSettings;
 import javafx.fxml.FXML;
+import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
+import properties.BooleanProperty;
+import properties.IntegerProperty;
+import properties.Property;
 import resources.lang.Locales;
 import settings.Settings;
 import resources.lang.Language;
 
 public class SettingsHandler {
-	
-	private static Scene scene;
-	
-	public static void setDefault(Scene scene) {
-		SettingsHandler.scene = scene;
-		
+
+    private static Scene scene;
+    private static Node scroll;
+    private static Settings settings = Settings.getInstance();
+
+    public static void setDefault(Scene scene) {
+        SettingsHandler.scene = scene;
+        SettingsHandler.scroll = ((ScrollPane) scene.lookup("#scrollContainer")).getContent();
+
 //		Replace the checkboxes' values with the values from the settings file
-		setCheckboxValue("add", Settings.add);
-		setCheckboxValue("sub", Settings.sub);
-		setCheckboxValue("mul", Settings.mul);
-		setCheckboxValue("div", Settings.div);
-		setCheckboxValue("subNeg", Settings.subNeg);
-		setCheckboxValue("divDec", Settings.divComma);
-		setCheckboxValue("windowMaximized", Settings.startMaximized);
-		setCheckboxValue("automaticUpdates", Settings.automaticUpdates);
+        for (BooleanProperty p : settings.operationSettings) {
+            ((JFXCheckBox) lookupProperty(p)).setSelected(p.getValue());
+        }
+
+        setCheckboxValue("windowMaximized", settings.startMaximized, false);
+        setCheckboxValue("automaticUpdates", settings.automaticUpdates, false);
 
 //		Replace the text fields' values with the values from the settings file
-		setTextfieldValue("addMin", Settings.addMin);
-		setTextfieldValue("addMax", Settings.addMax);
-		setTextfieldValue("subMin", Settings.subMin);
-		setTextfieldValue("subMax", Settings.subMax);
-		setTextfieldValue("mulMin", Settings.mulMin);
-		setTextfieldValue("mulMax", Settings.mulMax);
-		setTextfieldValue("divMin", Settings.divMin);
-		setTextfieldValue("divMax", Settings.divMax);
+        for (IntegerProperty p : settings.minMaxSettings) {
+            ((JFXTextField) lookupProperty(p)).setText(String.valueOf(p.getValue()));
+        }
 
 //		Replace the sliders' values with the values from the settings file
-		setSliderValue("factorCount", Settings.factorCount);
-		setSliderValue("windowWidth", Settings.startWidth);
-		setSliderValue("windowHeight", Settings.startHeight);
+        setSliderValue("factorCount", settings.factorCount.getValue(), true);
+        setSliderValue("windowWidth", settings.startWidth, false);
+        setSliderValue("windowHeight", settings.startHeight, false);
 
 //		Label difficulty = (Label) scene.lookup("#difficulty");
 //		difficulty.setText(String.valueOf(Difficulty.getDifficulty()));
 
-		@SuppressWarnings("unchecked")
-		JFXComboBox<Label> language = (JFXComboBox<Label>) scene.lookup("#language");
+        @SuppressWarnings("unchecked")
+        JFXComboBox<Label> language = (JFXComboBox<Label>) scene.lookup("#language");
 
 //		Add all available languages the the combo box
-		language.getItems().add(new Label(Locales.ENGLISH.getName()));
-		language.getItems().add(new Label(Locales.GERMAN.getName()));
-		language.getItems().add(new Label(Locales.FRENCH.getName()));
-		language.getItems().add(new Label(Locales.CHINESE.getName()));
-		language.getItems().add(new Label(Locales.RUSSIAN.getName()));
-		language.getItems().add(new Label(Locales.SPAIN.getName()));
+        language.getItems().add(new Label(Locales.ENGLISH.getName()));
+        language.getItems().add(new Label(Locales.GERMAN.getName()));
+        language.getItems().add(new Label(Locales.FRENCH.getName()));
+        language.getItems().add(new Label(Locales.CHINESE.getName()));
+        language.getItems().add(new Label(Locales.RUSSIAN.getName()));
+        language.getItems().add(new Label(Locales.SPAIN.getName()));
 
 //		Select the current language
-		if(Settings.lang.equals(Locales.ENGLISH.getLocale())) language.getSelectionModel().select(0);
-		else if(Settings.lang.equals(Locales.GERMAN.getLocale())) language.getSelectionModel().select(1);
-		else if(Settings.lang.equals(Locales.FRENCH.getLocale())) language.getSelectionModel().select(2);
-		else if(Settings.lang.equals(Locales.CHINESE.getLocale())) language.getSelectionModel().select(3);
-		else if(Settings.lang.equals(Locales.RUSSIAN.getLocale())) language.getSelectionModel().select(4);
-		else if(Settings.lang.equals(Locales.SPAIN.getLocale())) language.getSelectionModel().select(5);
-		else language.getSelectionModel().select(0);
+        if (settings.lang.equals(Locales.ENGLISH.getLocale())) language.getSelectionModel().select(0);
+        else if (settings.lang.equals(Locales.GERMAN.getLocale())) language.getSelectionModel().select(1);
+        else if (settings.lang.equals(Locales.FRENCH.getLocale())) language.getSelectionModel().select(2);
+        else if (settings.lang.equals(Locales.CHINESE.getLocale())) language.getSelectionModel().select(3);
+        else if (settings.lang.equals(Locales.RUSSIAN.getLocale())) language.getSelectionModel().select(4);
+        else if (settings.lang.equals(Locales.SPAIN.getLocale())) language.getSelectionModel().select(5);
+        else language.getSelectionModel().select(0);
     }
-	
-	@FXML
-	public static void updateAndSave(Scene scene, StackPane sp, Stage stage) {	
-		update(scene);
-		
-		FileHandler.writeSettings();
-		
-		JFXSnackbar notify = new JFXSnackbar(sp);
-		notify.show(Language.get("settings.saved"), 5000);
-		
-		InitSettings init = new InitSettings(stage);
-		try {
-			init.init();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
-	
-	public static void update(Scene scene) {
+
+    @FXML
+    public static void updateAndSave(Scene scene, StackPane sp, Stage stage) {
+        update(scene);
+
+        FileHandler.writeSettings();
+
+        JFXSnackbar notify = new JFXSnackbar(sp);
+        notify.show(Language.get("settings.saved"), 5000);
+
+        InitSettings init = new InitSettings(stage);
+        try {
+            init.init();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void update(Scene scene) {
 //		Settings.add = getCheckboxValue("add");
 //		Settings.sub = getCheckboxValue("sub");
 //		Settings.mul = getCheckboxValue("mul");
@@ -132,24 +132,40 @@ public class SettingsHandler {
 //		} else {
 //			Settings.lang = Locales.ENGLISH.getLocale();
 //		}
-	}
-	
-	private static boolean getCheckboxValue(String selector) {
-		return ((JFXCheckBox) scene.lookup("#" + selector)).isSelected();
-	}
-	private static void setCheckboxValue(String selector, boolean value) {
-		((JFXCheckBox) scene.lookup("#" + selector)).setSelected(value);
-	}
-	private static String getTextfieldValue(String selector) {
-		return ((JFXTextField) scene.lookup("#" + selector)).getText();
-	}
-	private static void setTextfieldValue(String selector, int value) {
-		((JFXTextField) scene.lookup("#" + selector)).setText(String.valueOf(value));
-	}
-	private static double getSliderValue(String selector) {
-		return ((JFXSlider) scene.lookup("#" + selector)).getValue();
-	}
-	private static void setSliderValue(String selector, double value) {
-		((JFXSlider) scene.lookup("#" + selector)).setValue(value);
-	}
+    }
+
+    private static Node lookupProperty(Property prop) {
+        Node n = scene.lookup("#" + prop.getName());
+        if (n == null) {
+            n = scroll.lookup("#" + prop.getName());
+        }
+        return n;
+    }
+
+    private static boolean getCheckboxValue(String selector) {
+        return ((JFXCheckBox) scene.lookup("#" + selector)).isSelected();
+    }
+
+    private static void setCheckboxValue(String selector, boolean value, boolean scrollPane) {
+        if (scrollPane) ((JFXCheckBox) scroll.lookup("#" + selector)).setSelected(value);
+        else ((JFXCheckBox) scene.lookup("#" + selector)).setSelected(value);
+    }
+
+    private static String getTextfieldValue(String selector) {
+        return ((JFXTextField) scene.lookup("#" + selector)).getText();
+    }
+
+    private static void setTextfieldValue(String selector, int value, boolean scrollPane) {
+        if (scrollPane) ((JFXTextField) scroll.lookup("#" + selector)).setText(String.valueOf(value));
+        else ((JFXTextField) scene.lookup("#" + selector)).setText(String.valueOf(value));
+    }
+
+    private static double getSliderValue(String selector) {
+        return ((JFXSlider) scene.lookup("#" + selector)).getValue();
+    }
+
+    private static void setSliderValue(String selector, double value, boolean scrollPane) {
+        if (scrollPane) ((JFXSlider) scroll.lookup("#" + selector)).setValue(value);
+        else ((JFXSlider) scene.lookup("#" + selector)).setValue(value);
+    }
 }

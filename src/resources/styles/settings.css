@@ -1,3 +1,8 @@
+.container {
+    -fx-max-width: 960px;
+    -fx-float: center;
+}
+
 .label {
 	-fx-font-family: "Roboto Light", Arial, sans-serif;
 	-fx-font-size: 14px;

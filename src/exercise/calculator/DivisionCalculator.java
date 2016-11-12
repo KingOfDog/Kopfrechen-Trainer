@@ -4,6 +4,8 @@ import settings.Settings;
 
 public class DivisionCalculator implements Calculator {
 
+	private Settings settings = Settings.getInstance();
+
 	@Override
 	public float calculate(float a, float b) {
 		return a / b;
@@ -16,17 +18,17 @@ public class DivisionCalculator implements Calculator {
 
 	@Override
 	public int minimumBound() {
-		return Settings.divMin;
+		return settings.divMin.getValue();
 	}
 
 	@Override
 	public int maximumBound() {
-		return Settings.divMax;
+		return settings.divMax.getValue();
 	}
 
 	@Override
 	public boolean isValid(float a, float b) {
-		if(!Settings.divComma && a % b != 0) return false;
+		if(!settings.divDec.getValue() && a % b != 0) return false;
 		
 		return true;
 	}

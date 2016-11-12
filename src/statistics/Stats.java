@@ -8,6 +8,8 @@ import settings.Settings;
 
 public class Stats {
 
+	private Settings settings = Settings.getInstance();
+
 	public void start(Scene scene) {
 
 		Label exercisesLabel = (Label) scene.lookup("#exercises");
@@ -27,21 +29,21 @@ public class Stats {
 		long second = (timePlayed / 1000) % 60;
 		long minute = (timePlayed / (1000 * 60)) % 60;
 		long hour = (timePlayed / (1000 * 60 * 60)) % 24;
-		String timePlayedStr = String.format(Settings.lang, "%02d %s %02d %s %02d %s", hour,
+		String timePlayedStr = String.format(settings.lang, "%02d %s %02d %s %02d %s", hour,
 				Language.get("stats.hours"), minute, Language.get("stats.minutes"), second,
 				Language.get("stats.seconds"));
 		float averageTime = ((float) timePlayed / 1000) / (float) ex;
 		double score = Statistics.getScore();
 		double averageDifficulty = score / ex;
 
-		exercisesLabel.setText(String.format(Settings.lang, "%d", ex));
-		exercisesSolvedLabel.setText(String.format(Settings.lang, "%d", exSo));
-		markPointsLabel.setText(String.format(Settings.lang, "%.5f", markPoints));
+		exercisesLabel.setText(String.format(settings.lang, "%d", ex));
+		exercisesSolvedLabel.setText(String.format(settings.lang, "%d", exSo));
+		markPointsLabel.setText(String.format(settings.lang, "%.5f", markPoints));
 		markWordsLabel.setText(markWord);
 		timeLabel.setText(timePlayedStr);
-		averageTimeLabel.setText(String.format(Settings.lang, "%.5f %s", averageTime, Language.get("stats.seconds")));
-		scoreLabel.setText(String.format(Settings.lang, "%.5f", score));
-		averageDifficultyLabel.setText(String.format(Settings.lang, "%.5f", averageDifficulty));
+		averageTimeLabel.setText(String.format(settings.lang, "%.5f %s", averageTime, Language.get("stats.seconds")));
+		scoreLabel.setText(String.format(settings.lang, "%.5f", score));
+		averageDifficultyLabel.setText(String.format(settings.lang, "%.5f", averageDifficulty));
 	}
 
 }
