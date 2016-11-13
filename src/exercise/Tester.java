@@ -35,7 +35,7 @@ public class Tester {
         generateExercise();
         setExercise(scene);
 
-        String blacklist = "°!\"§$%&/()=?`´^<>;:-_#'+*@€µ|~²³{[]}\\";
+        String blacklist = "°!\"§$%&/()=?`´^<>;:_#'+*@€µ|~²³{[]}\\";
 
         TextField txt = (TextField) scene.lookup("#answerInput");
         txt.setOnKeyTyped(event -> {
@@ -50,11 +50,7 @@ public class Tester {
                 event.consume();
                 return;
             }
-            if (text.isEmpty() && (c == '0' || c == '.' || c == ',')) {
-                event.consume();
-                return;
-            }
-            if (!text.isEmpty() && c == '-') {
+            if (text.isEmpty() && (c == '.' || c == ',')) {
                 event.consume();
                 return;
             }
@@ -79,7 +75,7 @@ public class Tester {
         input.setText("");
         isChecked = false;
         timePlayed = System.currentTimeMillis();
-        ((Label) scene.lookup("#currentDifficulty")).setText(String.format(settings.lang, "%.5f", difficulty));
+        ((Label) scene.lookup("#currentDifficulty")).setText(String.format(settings.lang.getValue(), "%.5f", difficulty));
     }
 
     public static void generateExercise() {
@@ -111,7 +107,7 @@ public class Tester {
         Statistics.setExercises(Statistics.getExercises() + 1);
         Statistics.addMillisecondsPlayed(timePlayed);
 
-        SoundHandler sound = new SoundHandler(settings.sounds, settings.volume);
+        SoundHandler sound = new SoundHandler(settings.sounds.getValue(), settings.volume);
         if (answer == exercise.getSolution()) {
             sound.playSound("/resources/sounds/correct.mp3");
             labelExercise.setTextFill(Color.web(settings.exerciseCorrect));

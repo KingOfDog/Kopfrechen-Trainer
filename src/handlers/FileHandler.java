@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import properties.BooleanProperty;
 import properties.IntegerProperty;
+import properties.LocaleProperty;
 import settings.Settings;
 import settings.SettingsDeserializer;
 import statistics.Statistics;
@@ -38,6 +39,7 @@ public class FileHandler {
         gsonBuilder.excludeFieldsWithoutExposeAnnotation();
         gsonBuilder.registerTypeAdapter(BooleanProperty.class, new BooleanProperty.Serializer());
         gsonBuilder.registerTypeAdapter(IntegerProperty.class, new IntegerProperty.Serializer());
+        gsonBuilder.registerTypeAdapter(LocaleProperty.class, new LocaleProperty.Serializer());
         Gson gson = gsonBuilder.create();
         String json = gson.toJson(obj);
         System.out.println(json);

@@ -17,11 +17,11 @@ public class Main extends Application {
 	@Override
 	public void start(Stage stage) throws Exception {
 //		Initialize the window and set it's width, height, title and icon 
-		stage.setMinHeight(450);
-		stage.setMinWidth(700);
-		stage.setHeight(settings.startHeight);
-		stage.setWidth(settings.startWidth);
-		stage.setMaximized(settings.startMaximized);
+//		stage.setMinHeight(450);
+//		stage.setMinWidth(700);
+		stage.setHeight(settings.startHeight.getValue());
+		stage.setWidth(settings.startWidth.getValue());
+		stage.setMaximized(settings.startMaximized.getValue());
 		stage.getIcons().add(new Image("/resources/img/icon.png"));
 		stage.setTitle("MATH - Math training game");
 		
@@ -30,7 +30,7 @@ public class Main extends Application {
 		init.init();
 		
 //		Search for updates and send notification if new version is available
-		if(settings.automaticUpdates) {
+		if(settings.automaticUpdates.getValue()) {
 //			String[] version = UpdateHandler.update();
 //			boolean update = false;
 //			if(version[0] == "true") {

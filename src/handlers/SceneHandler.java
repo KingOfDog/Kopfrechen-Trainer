@@ -22,7 +22,7 @@ public class SceneHandler implements Initializable {
 		Font.loadFont("/resources/fonts/Roboto-Light.ttf", 16);
 		Font.loadFont("/resources/fonts/cc-icons.ttf", 16);
 		FXMLLoader loader = new FXMLLoader();
-		loader.setResources(ResourceBundle.getBundle("resources.lang.lang", settings.lang));
+		loader.setResources(ResourceBundle.getBundle("resources.lang.lang", settings.lang.getValue()));
 		Parent parent = loader.load(getClass().getResource(String.format("/resources/javafx/%s.fxml", name)).openStream());
 		Scene scene = new Scene(parent);
 		scene.getStylesheets().add(String.format("/resources/styles/%s.css", name));

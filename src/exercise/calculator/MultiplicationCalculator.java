@@ -13,7 +13,7 @@ public class MultiplicationCalculator implements Calculator {
 
 	@Override
 	public char getOperatorSign() {
-		return '�';
+		return '×';
 	}
 
 	@Override

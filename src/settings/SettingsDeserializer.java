@@ -37,14 +37,14 @@ public class SettingsDeserializer implements JsonDeserializer<Settings> {
         final String language = jsonObject.get("lang").getAsString();
         final Locale lang = new Locale(language.split("_")[0], language.split("_")[1]);
 
-//        final boolean sounds = jsonObject.get("sounds").getAsBoolean();
+        final boolean sounds = jsonObject.get("sounds").getAsBoolean();
 //        final double volume = jsonObject.get("volume").getAsDouble();
 
-//        final boolean updates = jsonObject.get("automaticUpdates").getAsBoolean();
+        final boolean updates = jsonObject.get("automaticUpdates").getAsBoolean();
 
-//        final boolean startMaximized = jsonObject.get("startMaximized").getAsBoolean();
-//        final double startWidth = jsonObject.get("startWidth").getAsDouble();
-//        final double startHeight = jsonObject.get("startHeight").getAsDouble();
+        final boolean startMaximized = jsonObject.get("startMaximized").getAsBoolean();
+        final int startWidth = jsonObject.get("startWidth").getAsInt();
+        final int startHeight = jsonObject.get("startHeight").getAsInt();
 
 //        final String exerciseCorrect = jsonObject.get("exerciseCorrect").getAsString();
 //        final String exerciseWrong = jsonObject.get("exerciseWrong").getAsString();
@@ -68,7 +68,15 @@ public class SettingsDeserializer implements JsonDeserializer<Settings> {
         settings.divDec.setValue(divDec);
 
         settings.factorCount.setValue(factorCount);
-        settings.setLang(lang);
+        settings.lang.setValue(lang);
+
+        settings.sounds.setValue(sounds);
+
+        settings.automaticUpdates.setValue(updates);
+
+        settings.startMaximized.setValue(startMaximized);
+        settings.startWidth.setValue(startWidth);
+        settings.startHeight.setValue(startHeight);
 
         return settings;
     }
