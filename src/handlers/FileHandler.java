@@ -42,7 +42,6 @@ public class FileHandler {
         gsonBuilder.registerTypeAdapter(LocaleProperty.class, new LocaleProperty.Serializer());
         Gson gson = gsonBuilder.create();
         String json = gson.toJson(obj);
-        System.out.println(json);
         try (FileWriter file = new FileWriter(FileSystemView.getFileSystemView().getHomeDirectory() + "\\..\\MATH\\settings.json")) {
             file.write(json);
         } catch (Exception e) {
