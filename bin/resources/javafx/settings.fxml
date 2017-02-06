@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:id="container" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="handlers.FXMLHandler">
+   <children>
+      <JFXTabPane rotateGraphic="true" side="BOTTOM">
+         <tabs>
+            <Tab closable="false" styleClass="container" text="%settings.tab.main">
+              <content>
+                  <ScrollPane fx:id="mainContainer" fitToHeight="true" fitToWidth="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefViewportHeight="593.0" prefViewportWidth="600.0">
+                     <content>
+                        <VBox prefHeight="200.0" prefWidth="100.0" spacing="20.0" styleClass="container">
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0" spacing="15.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" text="%settings.language" />
+                                    <JFXComboBox fx:id="language" maxWidth="1.7976931348623157E308" promptText="%settings.language" />
+                                 </children>
+                              </VBox>
+                              <VBox layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" spacing="15.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" text="%settings.window.width" />
+                                    <JFXSlider fx:id="windowWidth" majorTickUnit="50.0" max="1049.0" maxWidth="1.7976931348623157E308" min="850.0" minorTickCount="10" showTickLabels="true" showTickMarks="true" />
+                                 </children>
+                              </VBox>
+                              <VBox layoutX="10.0" layoutY="210.0" prefHeight="200.0" prefWidth="100.0" spacing="15.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" text="%settings.window.height" />
+                                    <JFXSlider fx:id="windowHeight" majorTickUnit="50.0" max="900.0" maxWidth="1.7976931348623157E308" min="500.0" minorTickCount="10" showTickLabels="true" showTickMarks="true" />
+                                 </children>
+                              </VBox>
+                              <VBox layoutX="10.0" layoutY="143.0" prefHeight="200.0" prefWidth="100.0" spacing="15.0">
+                                 <children>
+                                    <JFXCheckBox fx:id="windowMaximized" maxWidth="1.7976931348623157E308" text="%settings.window.maximized" />
+                                 </children>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                           </padding>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+              </content>
+            </Tab>
+            <Tab closable="false" styleClass="container" text="%settings.tab.exercises">
+               <content>
+                  <ScrollPane fx:id="exerciseContainer" fitToHeight="true" fitToWidth="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefViewportHeight="593.0" prefViewportWidth="600.0">
+                     <content>
+                        <VBox prefHeight="200.0" prefWidth="100.0" spacing="20.0" styleClass="container">
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" text="%settings.add.ex" />
+                                    <HBox maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <JFXCheckBox fx:id="add" maxHeight="30.0" prefWidth="190.0" text="%settings.add" HBox.hgrow="ALWAYS" />
+                                          <JFXTextField fx:id="addMin" labelFloat="true" maxHeight="30.0" maxWidth="1.7976931348623157E308" promptText="%settings.add.min" HBox.hgrow="ALWAYS" />
+                                          <JFXTextField fx:id="addMax" labelFloat="true" maxHeight="30.0" maxWidth="1.7976931348623157E308" promptText="%settings.add.max" HBox.hgrow="ALWAYS" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" text="%settings.sub.ex" />
+                                    <HBox maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <JFXCheckBox fx:id="sub" maxHeight="30.0" prefWidth="190.0" text="%settings.sub" HBox.hgrow="ALWAYS" />
+                                          <JFXTextField fx:id="subMin" labelFloat="true" maxHeight="30.0" maxWidth="1.7976931348623157E308" promptText="%settings.sub.min" HBox.hgrow="ALWAYS" />
+                                          <JFXTextField fx:id="subMax" labelFloat="true" maxHeight="30.0" maxWidth="1.7976931348623157E308" promptText="%settings.sub.max" HBox.hgrow="ALWAYS" />
+                                       </children>
+                                    </HBox>
+                                    <JFXCheckBox fx:id="subNeg" maxHeight="30.0" maxWidth="1.7976931348623157E308" text="%settings.sub.neg" />
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" text="%settings.mul.ex" />
+                                    <HBox maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <JFXCheckBox fx:id="mul" maxHeight="30.0" prefWidth="190.0" text="%settings.mul" HBox.hgrow="ALWAYS" />
+                                          <JFXTextField fx:id="mulMin" labelFloat="true" maxHeight="30.0" maxWidth="1.7976931348623157E308" promptText="%settings.mul.min" HBox.hgrow="ALWAYS" />
+                                          <JFXTextField fx:id="mulMax" labelFloat="true" maxHeight="30.0" maxWidth="1.7976931348623157E308" promptText="%settings.mul.max" HBox.hgrow="ALWAYS" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" text="%settings.div.ex" />
+                                    <HBox maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <JFXCheckBox fx:id="div" maxHeight="30.0" prefWidth="190.0" text="%settings.div" HBox.hgrow="ALWAYS" />
+                                          <JFXTextField fx:id="divMin" labelFloat="true" maxHeight="30.0" maxWidth="1.7976931348623157E308" promptText="%settings.div.min" HBox.hgrow="ALWAYS" />
+                                          <JFXTextField fx:id="divMax" labelFloat="true" maxHeight="30.0" maxWidth="1.7976931348623157E308" promptText="%settings.div.max" HBox.hgrow="ALWAYS" />
+                                       </children>
+                                    </HBox>
+                                    <JFXCheckBox fx:id="divDec" maxHeight="30.0" maxWidth="1.7976931348623157E308" text="%settings.div.dec" />
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" text="%settings.power.ex" />
+                                    <HBox maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <JFXCheckBox fx:id="pow" maxHeight="30.0" onAction="#notavailable" prefWidth="190.0" text="%settings.power" HBox.hgrow="ALWAYS" />
+                                          <JFXTextField fx:id="powMinBase" labelFloat="true" maxHeight="30.0" maxWidth="1.7976931348623157E308" onAction="#notavailable" promptText="%settings.power.min.base" HBox.hgrow="ALWAYS" />
+                                          <JFXTextField fx:id="powMaxBase" labelFloat="true" maxHeight="30.0" maxWidth="1.7976931348623157E308" onAction="#notavailable" promptText="%settings.power.max.base" HBox.hgrow="ALWAYS" />
+                                       </children>
+                                    </HBox>
+                                    <HBox maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Pane maxHeight="30.0" prefWidth="190.0" />
+                                          <JFXTextField fx:id="powMinExpo" labelFloat="true" maxHeight="30.0" maxWidth="1.7976931348623157E308" onAction="#notavailable" promptText="%settings.power.min.expo" HBox.hgrow="ALWAYS" />
+                                          <JFXTextField fx:id="powMaxExpo" labelFloat="true" maxHeight="30.0" maxWidth="1.7976931348623157E308" onAction="#notavailable" promptText="%settings.power.max.expo" HBox.hgrow="ALWAYS" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" text="%settings.roots.ex" />
+                                    <HBox maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <JFXCheckBox fx:id="root" maxHeight="30.0" onAction="#notavailable" prefWidth="190.0" text="%settings.roots" HBox.hgrow="ALWAYS" />
+                                          <JFXTextField fx:id="rootMinRad" labelFloat="true" maxHeight="30.0" maxWidth="1.7976931348623157E308" onAction="#notavailable" promptText="%settings.roots.min.rad" HBox.hgrow="ALWAYS" />
+                                          <JFXTextField fx:id="rootMaxRad" labelFloat="true" maxHeight="30.0" maxWidth="1.7976931348623157E308" onAction="#notavailable" promptText="%settings.roots.max.rad" HBox.hgrow="ALWAYS" />
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="10.0" layoutY="37.0" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <JFXCheckBox fx:id="rootDec" maxHeight="30.0" onAction="#notavailable" prefWidth="190.0" text="%settings.roots.dec" HBox.hgrow="ALWAYS" />
+                                          <JFXTextField fx:id="rootMinExpo" labelFloat="true" maxHeight="30.0" maxWidth="1.7976931348623157E308" onAction="#notavailable" promptText="%settings.roots.min.expo" HBox.hgrow="ALWAYS" />
+                                          <JFXTextField fx:id="rootMaxExpo" labelFloat="true" maxHeight="30.0" maxWidth="1.7976931348623157E308" onAction="#notavailable" promptText="%settings.roots.max.expo" HBox.hgrow="ALWAYS" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" text="%settings.count" />
+                                    <JFXSlider fx:id="factorCount" majorTickUnit="2.0" max="10.0" min="2.0" minorTickCount="1" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
+                                 </children>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </content>
+            </Tab>
+            <Tab closable="false" styleClass="container" text="%settings.tab.updates">
+               <content>
+                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="20.0" styleClass="container">
+                     <padding>
+                        <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                     </padding>
+                     <children>
+                        <JFXCheckBox fx:id="automaticUpdates" text="%settings.updates.automatic" />
+                     </children>
+                  </VBox>
+               </content>
+            </Tab>
+         </tabs>
+         <StackPane.margin>
+            <Insets top="50.0" />
+         </StackPane.margin>
+      </JFXTabPane>
+   </children>
+</StackPane>

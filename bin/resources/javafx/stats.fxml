@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane fx:id="container" prefHeight="506.0" prefWidth="806.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="handlers.FXMLHandler">
+   <children>
+      <Group translateY="-130.0">
+         <children>
+            <Group translateY="-15.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="25.0" prefWidth="330.0" text="%stats.exercises" translateX="-180.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                <Label fx:id="exercises" prefHeight="25.0" prefWidth="330.0" styleClass="label-bold" text="" translateX="180.0">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                </Label>
+               </children>
+            </Group>
+            <Group translateY="15.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="25.0" prefWidth="330.0" text="%stats.exercises.correct" translateX="-180.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="exercisesSolved" prefHeight="25.0" prefWidth="330.0" styleClass="label-bold" text="" translateX="180.0">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Group>
+         </children>
+      </Group>
+      <Group translateY="-50.0">
+         <children>
+            <Group translateY="-15.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="25.0" prefWidth="330.0" text="%stats.mark.points" translateX="-180.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="mark" prefHeight="25.0" prefWidth="330.0" styleClass="label-bold" text="" translateX="180.0">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Group>
+            <Group translateY="15.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="25.0" prefWidth="330.0" text="%stats.mark" translateX="-180.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="markWords" prefHeight="25.0" prefWidth="330.0" styleClass="label-bold" text="" translateX="180.0">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Group>
+         </children>
+      </Group>
+      <Group translateY="30.0">
+         <children>
+            <Group translateY="-15.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="25.0" prefWidth="330.0" text="%stats.playtime" translateX="-180.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="timePlayed" prefHeight="25.0" prefWidth="330.0" styleClass="label-bold" text="" translateX="180.0">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Group>
+            <Group translateY="15.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="25.0" prefWidth="330.0" text="%stats.average.time" translateX="-180.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="averageTime" prefHeight="25.0" prefWidth="330.0" styleClass="label-bold" text="" translateX="180.0">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Group>
+         </children>
+      </Group>
+      <Group translateY="110.0">
+         <children>
+            <Group translateY="-15.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="25.0" prefWidth="330.0" text="%stats.score" translateX="-180.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="score" prefHeight="25.0" prefWidth="330.0" styleClass="label-bold" text="" translateX="180.0">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Group>
+            <Group translateY="15.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="25.0" prefWidth="330.0" text="%stats.average.difficulty" translateX="-180.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="averageDifficulty" prefHeight="25.0" prefWidth="330.0" styleClass="label-bold" text="" translateX="180.0">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Group>
+         </children>
+      </Group>
+   </children>
+</StackPane>

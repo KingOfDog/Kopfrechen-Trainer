@@ -1,0 +1,25 @@
+.jfx-button .jfx-rippler {
+	-fx-rippler-fill: #00c853;
+}
+
+.jfx-button .glyph-icon {
+	-fx-fill: #607D8B;
+}
+
+.blue-button .glyph-icon {
+	-fx-fill: #2196F3;
+}
+
+.label {
+	-fx-text-fill: #424242;
+}
+
+.title {
+	-fx-font-size: 32px;
+	-fx-font-family: "Roboto Bold", Arial, sans-serif;
+}
+
+.subtitle {
+	-fx-font-size: 20px;
+	-fx-font-family: "Roboo Light", Arial, sans-serif;
+}

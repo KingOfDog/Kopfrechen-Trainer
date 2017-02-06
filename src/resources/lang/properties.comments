@@ -1,26 +1,3 @@
-#Modified by java-properties-editor.com (sorting:none), 
+#Modified by java-properties-editor.com (sorting:human), 
 
-home.copyright=Copyright note at the bottom main screen
-home.hover.play=Hover text for the play button
-home.hover.settings=Hover text for the settings button
-home.hover.stats=Hover text for the statistics button
-home.title.author=Author naming below the title in the main menu
-home.title.welcome=Title in the main menu
-home.toolbar=Toolbar text in the main menu
-settings.add=Checkbox label in the settings
-settings.add.max=Input label in the settings
-settings.add.min=Input label in the settings
-settings.difficulty=Label for the difficulty value in the settings
-settings.div=Checkbox label in the settings
-settings.div.dec=Checkbox label in the settings
-settings.div.max=Input label in the settings
-settings.div.min=Input label in the settings
-settings.language=Label for the language selection
-settings.mul=Checkbox label in the settings
-settings.mul.max=Input label in the settings
-settings.mul.min=Input label in the settings
-settings.save=Hover text for the save button in the settings
-settings.sub=Checkbox label in the settings
-settings.sub.max=Input label in the settings
-settings.sub.min=Input label in the settings
-settings.sub.neg=Checkbox label in the settings
+test.finish=\:
