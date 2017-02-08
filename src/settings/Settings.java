@@ -52,7 +52,7 @@ public class Settings {
     @Expose public LocaleProperty lang = new LocaleProperty("language", new Locale("de", "DE"));
 
     @Expose public BooleanProperty sounds = new BooleanProperty("sounds", true);
-    @Expose public double volume = 1;
+    @Expose public double volume = 0.75;
 
     @Expose public BooleanProperty automaticUpdates = new BooleanProperty("automaticUpdates", true);
 
