@@ -1,7 +1,7 @@
 {
-  version: "1.4",
-  path: "https://github.com/KingOfDog/Kopfrechen-Trainer/raw/master/Downloads/kopfrechen-trainer-1.4.exe",
-  version_info: "https://github.com/KingOfDog/Mental-Arithmetic-Trainer-Math-Game/releases/tag/v1.4",
-  size: "4.5MB",
-  check_sum: "edfbb15c0e45333ea476d334ed5dcaf4"
+  version: "1.5.1",
+  path: "https://github.com/KingOfDog/MATH/releases/download/v1.5.1/math-1.5.1.exe",
+  version_info: "https://github.com/KingOfDog/MATH/releases/tag/v1.5.1",
+  size: "9.93MB",
+  check_sum: "2B780CC4FBD13D8BB1DE95627B59A23F"
 }
