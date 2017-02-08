@@ -2,11 +2,42 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="math-1.5" />
+      <artifact name="math-1.5.1" />
     </artifacts-to-build>
   </component>
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/initializers/InitMain.java" line="94" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="31730c85-b9da-481e-a951-1640dbd8c917" name="Default" comment="" />
+    <list default="true" id="31730c85-b9da-481e-a951-1640dbd8c917" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/initializers/InitMain$1.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/initializers/InitMain$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/initializers/InitMain$2.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/initializers/InitMain$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/initializers/InitMain$3.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/initializers/InitMain$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/initializers/InitMain.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/initializers/InitMain.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/settings/Settings.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/settings/Settings.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/statistics/Stats.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/statistics/Stats.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/resources/javafx/main.fxml" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/resources/javafx/main.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/resources/javafx/stats.fxml" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/resources/javafx/stats.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/resources/lang/lang_de.properties" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/resources/lang/lang_de.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/resources/lang/lang_en.properties" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/resources/lang/lang_en.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/resources/lang/lang_es.properties" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/resources/lang/lang_es.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/resources/lang/lang_fr.properties" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/resources/lang/lang_fr.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/resources/lang/lang_ru.properties" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/resources/lang/lang_ru.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/resources/lang/lang_zh_CN.properties" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/resources/lang/lang_zh_CN.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/initializers/InitMain.java" afterPath="$PROJECT_DIR$/src/initializers/InitMain.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources/javafx/main.fxml" afterPath="$PROJECT_DIR$/src/resources/javafx/main.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources/javafx/stats.fxml" afterPath="$PROJECT_DIR$/src/resources/javafx/stats.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources/lang/lang_de.properties" afterPath="$PROJECT_DIR$/src/resources/lang/lang_de.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources/lang/lang_en.properties" afterPath="$PROJECT_DIR$/src/resources/lang/lang_en.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources/lang/lang_es.properties" afterPath="$PROJECT_DIR$/src/resources/lang/lang_es.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources/lang/lang_fr.properties" afterPath="$PROJECT_DIR$/src/resources/lang/lang_fr.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources/lang/lang_ru.properties" afterPath="$PROJECT_DIR$/src/resources/lang/lang_ru.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources/lang/lang_zh_CN.properties" afterPath="$PROJECT_DIR$/src/resources/lang/lang_zh_CN.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/settings/Settings.java" afterPath="$PROJECT_DIR$/src/settings/Settings.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/statistics/Stats.java" afterPath="$PROJECT_DIR$/src/statistics/Stats.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/artifacts/math_1_5.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/math_1_5_1.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,43 +52,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="53" column="113" lean-forward="false" selection-start-line="53" selection-start-column="113" selection-end-line="53" selection-end-column="113" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SoundHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/handlers/SoundHandler.java">
+      <file leaf-file-name="LocaleProperty.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/properties/LocaleProperty.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Version.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/updates/Version.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InitToolbar.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/initializers/InitToolbar.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="47" column="39" lean-forward="false" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
+              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -66,36 +65,54 @@
       <file leaf-file-name="Settings.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/settings/Settings.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InitSettings.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/initializers/InitSettings.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="136">
+              <caret line="43" column="86" lean-forward="true" selection-start-line="43" selection-start-column="86" selection-end-line="43" selection-end-column="86" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SettingsHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/handlers/SettingsHandler.java">
+      <file leaf-file-name="InitStats.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/initializers/InitStats.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lang_de.properties" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Statistics.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/statistics/Statistics.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Stats.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/statistics/Stats.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="538">
+              <caret line="42" column="23" lean-forward="false" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stats.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/resources/styles/stats.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lang_de.properties" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/resources/lang/lang_de.properties">
           <provider selected="true" editor-type-id="ResourceBundle">
             <state />
@@ -108,24 +125,80 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileHandler.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/handlers/FileHandler.java">
+      <file leaf-file-name="stats.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/resources/javafx/stats.fxml">
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1486586182873" expanded="true" signature="2265:2410" ph="..." />
+                <marker date="1486586182873" expanded="true" signature="2293:2383" ph="..." />
+                <marker date="1486586182873" expanded="true" signature="2527:3918" ph="..." />
+                <marker date="1486586182873" expanded="true" signature="2547:3903" ph="..." />
+                <marker date="1486586182873" expanded="true" signature="2586:3216" ph="..." />
+                <marker date="1486586182873" expanded="true" signature="2612:3195" ph="..." />
+                <marker date="1486586182873" expanded="true" signature="2768:2897" ph="..." />
+                <marker date="1486586182873" expanded="true" signature="2796:2870" ph="..." />
+                <marker date="1486586182873" expanded="true" signature="3023:3168" ph="..." />
+                <marker date="1486586182873" expanded="true" signature="3051:3141" ph="..." />
+                <marker date="1486586182873" expanded="true" signature="3254:3882" ph="..." />
+                <marker date="1486586182873" expanded="true" signature="3280:3861" ph="..." />
+                <marker date="1486586182873" expanded="true" signature="3429:3558" ph="..." />
+                <marker date="1486586182873" expanded="true" signature="3457:3531" ph="..." />
+                <marker date="1486586182873" expanded="true" signature="3689:3834" ph="..." />
+                <marker date="1486586182873" expanded="true" signature="3717:3807" ph="..." />
+                <marker date="1486586182873" expanded="true" signature="3950:5354" ph="..." />
+                <marker date="1486586182873" expanded="true" signature="3970:5339" ph="..." />
+                <marker date="1486586182873" expanded="true" signature="4009:4642" ph="..." />
+                <marker date="1486586182873" expanded="true" signature="4035:4621" ph="..." />
+                <marker date="1486586182873" expanded="true" signature="4188:4317" ph="..." />
+                <marker date="1486586182873" expanded="true" signature="4216:4290" ph="..." />
+                <marker date="1486586182873" expanded="true" signature="4449:4594" ph="..." />
+                <marker date="1486586182873" expanded="true" signature="4477:4567" ph="..." />
+                <marker date="1486586182873" expanded="true" signature="4680:5318" ph="..." />
+                <marker date="1486586182873" expanded="true" signature="4706:5297" ph="..." />
+                <marker date="1486586182873" expanded="true" signature="4863:4992" ph="..." />
+                <marker date="1486586182873" expanded="true" signature="4891:4965" ph="..." />
+                <marker date="1486586182873" expanded="true" signature="5125:5270" ph="..." />
+                <marker date="1486586182873" expanded="true" signature="5153:5243" ph="..." />
+                <marker date="1486586182873" expanded="true" signature="5387:6795" ph="..." />
+                <marker date="1486586182873" expanded="true" signature="5407:6780" ph="..." />
+                <marker date="1486586182873" expanded="true" signature="5446:6071" ph="..." />
+                <marker date="1486586182873" expanded="true" signature="5472:6050" ph="..." />
+                <marker date="1486586182873" expanded="true" signature="5622:5751" ph="..." />
+                <marker date="1486586182873" expanded="true" signature="5650:5724" ph="..." />
+                <marker date="1486586182873" expanded="true" signature="5878:6023" ph="..." />
+                <marker date="1486586182873" expanded="true" signature="5906:5996" ph="..." />
+                <marker date="1486586182873" expanded="true" signature="6109:6759" ph="..." />
+                <marker date="1486586182873" expanded="true" signature="6135:6738" ph="..." />
+                <marker date="1486586182873" expanded="true" signature="6298:6427" ph="..." />
+                <marker date="1486586182873" expanded="true" signature="6326:6400" ph="..." />
+                <marker date="1486586182873" expanded="true" signature="6566:6711" ph="..." />
+                <marker date="1486586182873" expanded="true" signature="6594:6684" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IntegerProperty.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/properties/IntegerProperty.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+            <state relative-caret-position="68">
+              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UpdateHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/handlers/UpdateHandler.java">
+      <file leaf-file-name="BooleanProperty.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/properties/BooleanProperty.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="867">
-              <caret line="70" column="11" lean-forward="false" selection-start-line="70" selection-start-column="11" selection-end-line="70" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -146,6 +219,13 @@
         <option value="$PROJECT_DIR$/src/handlers/UpdateHandler.java" />
         <option value="$PROJECT_DIR$/src/main/Main.java" />
         <option value="$PROJECT_DIR$/src/handlers/FileHandler.java" />
+        <option value="$PROJECT_DIR$/src/initializers/InitMain.java" />
+        <option value="$PROJECT_DIR$/src/resources/javafx/main.fxml" />
+        <option value="$PROJECT_DIR$/src/settings/Settings.java" />
+        <option value="$PROJECT_DIR$/src/statistics/Statistics.java" />
+        <option value="$PROJECT_DIR$/src/statistics/Stats.java" />
+        <option value="$PROJECT_DIR$/src/resources/javafx/stats.fxml" />
+        <option value="$PROJECT_DIR$/src/resources/lang/lang_de.properties" />
       </list>
     </option>
   </component>
@@ -170,43 +250,26 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Kopfrechen-Trainer" />
+              <option name="myItemId" value="Kopfrechen-Trainer - Kopie" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Kopfrechen-Trainer" />
+              <option name="myItemId" value="Kopfrechen-Trainer - Kopie" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Kopfrechen-Trainer" />
+              <option name="myItemId" value="Kopfrechen-Trainer - Kopie" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Kopfrechen-Trainer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="updates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Kopfrechen-Trainer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Kopfrechen-Trainer" />
+              <option name="myItemId" value="Kopfrechen-Trainer - Kopie" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -216,11 +279,69 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Kopfrechen-Trainer" />
+              <option name="myItemId" value="Kopfrechen-Trainer - Kopie" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Kopfrechen-Trainer" />
+              <option name="myItemId" value="Kopfrechen-Trainer - Kopie" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="statistics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kopfrechen-Trainer - Kopie" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kopfrechen-Trainer - Kopie" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="settings" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kopfrechen-Trainer - Kopie" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kopfrechen-Trainer - Kopie" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="styles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kopfrechen-Trainer - Kopie" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kopfrechen-Trainer - Kopie" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -234,11 +355,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Kopfrechen-Trainer" />
+              <option name="myItemId" value="Kopfrechen-Trainer - Kopie" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Kopfrechen-Trainer" />
+              <option name="myItemId" value="Kopfrechen-Trainer - Kopie" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -256,11 +377,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Kopfrechen-Trainer" />
+              <option name="myItemId" value="Kopfrechen-Trainer - Kopie" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Kopfrechen-Trainer" />
+              <option name="myItemId" value="Kopfrechen-Trainer - Kopie" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -282,11 +403,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Kopfrechen-Trainer" />
+              <option name="myItemId" value="Kopfrechen-Trainer - Kopie" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Kopfrechen-Trainer" />
+              <option name="myItemId" value="Kopfrechen-Trainer - Kopie" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -294,17 +415,43 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javafx" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Kopfrechen-Trainer" />
+              <option name="myItemId" value="Kopfrechen-Trainer - Kopie" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Kopfrechen-Trainer" />
+              <option name="myItemId" value="Kopfrechen-Trainer - Kopie" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kopfrechen-Trainer - Kopie" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kopfrechen-Trainer - Kopie" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -318,11 +465,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Kopfrechen-Trainer" />
+              <option name="myItemId" value="Kopfrechen-Trainer - Kopie" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Kopfrechen-Trainer" />
+              <option name="myItemId" value="Kopfrechen-Trainer - Kopie" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -338,7 +485,6 @@
       </pane>
       <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -346,7 +492,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.build.tools" />
-    <property name="last_opened_file_path" value="D:/Marcel/Desktop/MATH" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -585,6 +731,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",ALPHA_COMPARATOR" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="31730c85-b9da-481e-a951-1640dbd8c917" name="Default" comment="" />
@@ -597,18 +746,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30972517" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30972517" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -624,7 +774,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -645,9 +794,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="53" column="113" lean-forward="false" selection-start-line="53" selection-start-column="113" selection-end-line="53" selection-end-column="113" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -671,7 +818,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="47" column="39" lean-forward="false" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#743#744#0" expanded="false" />
+            <element signature="e#777#778#0" expanded="false" />
+            <element signature="e#2636#2637#0" expanded="false" />
+            <element signature="e#2739#2740#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -679,9 +832,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -689,7 +840,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#343#344#0" expanded="false" />
+            <element signature="e#368#369#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -725,7 +880,10 @@
         <state relative-caret-position="867">
           <caret line="70" column="11" lean-forward="false" selection-start-line="70" selection-start-column="11" selection-end-line="70" selection-end-column="11" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1760#1761#0" expanded="false" />
+            <element signature="e#1817#1818#0" expanded="false" />
+            <element signature="e#1849#1850#0" expanded="false" />
+            <element signature="e#1884#1885#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -734,7 +892,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="47" column="39" lean-forward="false" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#743#744#0" expanded="false" />
+            <element signature="e#777#778#0" expanded="false" />
+            <element signature="e#2636#2637#0" expanded="false" />
+            <element signature="e#2739#2740#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -751,7 +915,10 @@
         <state relative-caret-position="867">
           <caret line="70" column="11" lean-forward="false" selection-start-line="70" selection-start-column="11" selection-end-line="70" selection-end-column="11" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1760#1761#0" expanded="false" />
+            <element signature="e#1817#1818#0" expanded="false" />
+            <element signature="e#1849#1850#0" expanded="false" />
+            <element signature="e#1884#1885#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -760,27 +927,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="53" column="113" lean-forward="false" selection-start-line="53" selection-start-column="113" selection-end-line="53" selection-end-column="113" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/handlers/SoundHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/settings/Settings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -788,27 +935,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#343#344#0" expanded="false" />
+            <element signature="e#368#369#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/handlers/SettingsHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/lang/lang_de.properties">
-      <provider selected="true" editor-type-id="ResourceBundle">
+    <entry file="file://$PROJECT_DIR$/src/resources/img/1.gif">
+      <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/handlers/FileHandler.java">
@@ -819,13 +956,203 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/initializers/InitMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="88" column="35" lean-forward="false" selection-start-line="88" selection-start-column="35" selection-end-line="88" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/styles/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/javafx/main.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/initializers/InitTester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/handlers/SoundHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/handlers/SettingsHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/properties/Property.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/properties/LocaleProperty.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/properties/IntegerProperty.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/properties/BooleanProperty.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/settings/Settings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="43" column="86" lean-forward="true" selection-start-line="43" selection-start-column="86" selection-end-line="43" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/initializers/InitStats.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/statistics/Statistics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/styles/stats.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/statistics/Stats.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="42" column="23" lean-forward="false" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/javafx/stats.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1486586182873" expanded="true" signature="2265:2410" ph="..." />
+            <marker date="1486586182873" expanded="true" signature="2293:2383" ph="..." />
+            <marker date="1486586182873" expanded="true" signature="2527:3918" ph="..." />
+            <marker date="1486586182873" expanded="true" signature="2547:3903" ph="..." />
+            <marker date="1486586182873" expanded="true" signature="2586:3216" ph="..." />
+            <marker date="1486586182873" expanded="true" signature="2612:3195" ph="..." />
+            <marker date="1486586182873" expanded="true" signature="2768:2897" ph="..." />
+            <marker date="1486586182873" expanded="true" signature="2796:2870" ph="..." />
+            <marker date="1486586182873" expanded="true" signature="3023:3168" ph="..." />
+            <marker date="1486586182873" expanded="true" signature="3051:3141" ph="..." />
+            <marker date="1486586182873" expanded="true" signature="3254:3882" ph="..." />
+            <marker date="1486586182873" expanded="true" signature="3280:3861" ph="..." />
+            <marker date="1486586182873" expanded="true" signature="3429:3558" ph="..." />
+            <marker date="1486586182873" expanded="true" signature="3457:3531" ph="..." />
+            <marker date="1486586182873" expanded="true" signature="3689:3834" ph="..." />
+            <marker date="1486586182873" expanded="true" signature="3717:3807" ph="..." />
+            <marker date="1486586182873" expanded="true" signature="3950:5354" ph="..." />
+            <marker date="1486586182873" expanded="true" signature="3970:5339" ph="..." />
+            <marker date="1486586182873" expanded="true" signature="4009:4642" ph="..." />
+            <marker date="1486586182873" expanded="true" signature="4035:4621" ph="..." />
+            <marker date="1486586182873" expanded="true" signature="4188:4317" ph="..." />
+            <marker date="1486586182873" expanded="true" signature="4216:4290" ph="..." />
+            <marker date="1486586182873" expanded="true" signature="4449:4594" ph="..." />
+            <marker date="1486586182873" expanded="true" signature="4477:4567" ph="..." />
+            <marker date="1486586182873" expanded="true" signature="4680:5318" ph="..." />
+            <marker date="1486586182873" expanded="true" signature="4706:5297" ph="..." />
+            <marker date="1486586182873" expanded="true" signature="4863:4992" ph="..." />
+            <marker date="1486586182873" expanded="true" signature="4891:4965" ph="..." />
+            <marker date="1486586182873" expanded="true" signature="5125:5270" ph="..." />
+            <marker date="1486586182873" expanded="true" signature="5153:5243" ph="..." />
+            <marker date="1486586182873" expanded="true" signature="5387:6795" ph="..." />
+            <marker date="1486586182873" expanded="true" signature="5407:6780" ph="..." />
+            <marker date="1486586182873" expanded="true" signature="5446:6071" ph="..." />
+            <marker date="1486586182873" expanded="true" signature="5472:6050" ph="..." />
+            <marker date="1486586182873" expanded="true" signature="5622:5751" ph="..." />
+            <marker date="1486586182873" expanded="true" signature="5650:5724" ph="..." />
+            <marker date="1486586182873" expanded="true" signature="5878:6023" ph="..." />
+            <marker date="1486586182873" expanded="true" signature="5906:5996" ph="..." />
+            <marker date="1486586182873" expanded="true" signature="6109:6759" ph="..." />
+            <marker date="1486586182873" expanded="true" signature="6135:6738" ph="..." />
+            <marker date="1486586182873" expanded="true" signature="6298:6427" ph="..." />
+            <marker date="1486586182873" expanded="true" signature="6326:6400" ph="..." />
+            <marker date="1486586182873" expanded="true" signature="6566:6711" ph="..." />
+            <marker date="1486586182873" expanded="true" signature="6594:6684" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/lang/lang_de.properties">
+      <provider selected="true" editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>math-1.5</last-edited>
+          <last-edited>math-1.5.1</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

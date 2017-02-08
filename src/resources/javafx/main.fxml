@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.media.*?>
-<?import javafx.scene.*?>
-<?import javafx.geometry.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import java.lang.*?>
-<?import javafx.scene.canvas.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
 
-<StackPane fx:id="container" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<StackPane fx:id="container" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Group translateX="75.0" translateY="75.0" StackPane.alignment="TOP_CENTER">
          <children>
@@ -25,5 +24,15 @@
             <Label fx:id="labelSubheader" prefHeight="47.0" prefWidth="432.0" styleClass="subtitle" text="%home.title.subtitle" translateY="25.0" />
          </children>
       </Group>
+      <StackPane fx:id="navigationContainer" maxWidth="-Infinity" prefHeight="500.0" prefWidth="100.0" StackPane.alignment="CENTER_RIGHT">
+         <StackPane.margin>
+            <Insets top="50.0" />
+         </StackPane.margin>
+      </StackPane>
+      <StackPane fx:id="informationContainer" prefHeight="150.0" prefWidth="670.0">
+         <StackPane.margin>
+            <Insets right="120.0" top="160.0" />
+         </StackPane.margin>
+      </StackPane>
    </children>
 </StackPane>

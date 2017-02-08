@@ -14,6 +14,7 @@ public class Stats {
 
 		Label exercisesLabel = (Label) scene.lookup("#exercises");
 		Label exercisesSolvedLabel = (Label) scene.lookup("#exercisesSolved");
+		Label errorQuoteLabel = (Label) scene.lookup("#errorQuote");
 		Label markPointsLabel = (Label) scene.lookup("#mark");
 		Label markWordsLabel = (Label) scene.lookup("#markWords");
 		Label timeLabel = (Label) scene.lookup("#timePlayed");
@@ -23,6 +24,7 @@ public class Stats {
 
 		int ex = Statistics.getExercises();
 		int exSo = Statistics.getExercisesCorrect();
+		float errorQuote = (Float.valueOf(ex) - Float.valueOf(exSo)) / Float.valueOf(ex) * 100;
 		double markPoints = Double.valueOf(exSo) / Double.valueOf(ex) * Double.valueOf(15);
 		String markWord = MarkGenerator.main(markPoints);
 		long timePlayed = Statistics.getMillisecondsPlayed();
@@ -38,6 +40,7 @@ public class Stats {
 
 		exercisesLabel.setText(String.format(settings.lang.getValue(), "%d", ex));
 		exercisesSolvedLabel.setText(String.format(settings.lang.getValue(), "%d", exSo));
+		errorQuoteLabel.setText(String.format(settings.lang.getValue(), "%.5f%%", errorQuote));
 		markPointsLabel.setText(String.format(settings.lang.getValue(), "%.5f", markPoints));
 		markWordsLabel.setText(markWord);
 		timeLabel.setText(timePlayedStr);

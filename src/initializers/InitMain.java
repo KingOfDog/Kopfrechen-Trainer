@@ -2,6 +2,10 @@ package initializers;
 
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
+import java.util.Random;
+
+import javafx.scene.image.Image;
+import javafx.scene.layout.*;
 import resources.lang.Language;
 
 import com.jfoenix.controls.JFXButton;
@@ -13,7 +17,6 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.control.Tooltip;
-import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
 public class InitMain {
@@ -28,12 +31,20 @@ public class InitMain {
 		SceneHandler sw = new SceneHandler();
 		Scene scene = sw.switchScene("main", this.stage);
 		StackPane sp = (StackPane) scene.lookup("#container");
-		
+
 		InitToolbar itb = new InitToolbar(scene);
 		scene = itb.init(Language.get("home.toolbar"), false, null, stage, "main");
-		
+
+		StackPane informationContainer = (StackPane) scene.lookup("#informationContainer");
+		String[] bImageArray = new String[] {"/resources/img/1.gif", "/resources/img/2.gif", "/resources/img/3.gif", "/resources/img/4.gif", "/resources/img/5.gif", "/resources/img/6.gif", "/resources/img/7.gif", "/resources/img/8.gif", "/resources/img/9.gif", "/resources/img/10.gif"};
+
+		BackgroundImage bImage = new BackgroundImage(new Image(bImageArray[new Random().nextInt(bImageArray.length)],-1,-1, false, true), BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER, new BackgroundSize(BackgroundSize.AUTO, BackgroundSize.AUTO, false, false, true, false));
+		informationContainer.setBackground(new Background(bImage));
+
+		StackPane navigationContainer = (StackPane) scene.lookup("#navigationContainer");
+
 		JFXButton btnStart = new JFXButton();
-		MaterialIconFactory.get().setIcon(btnStart, MaterialIcon.PLAY_CIRCLE_FILLED, "10em");
+		MaterialIconFactory.get().setIcon(btnStart, MaterialIcon.PLAY_CIRCLE_FILLED, "90px");
 		btnStart.setDefaultButton(true);
 		btnStart.getStyleClass().add("blue-button");
 		btnStart.setOnAction(new EventHandler<ActionEvent>() {
@@ -49,16 +60,16 @@ public class InitMain {
 			}
 		});
 		btnStart.setTooltip(new Tooltip(Language.get("home.hover.play")));
-		sp.getChildren().add(btnStart);
+		navigationContainer.getChildren().add(btnStart);
 		
 		// Add settings button
 		JFXButton btnSettings = new JFXButton();
-		MaterialIconFactory.get().setIcon(btnSettings, MaterialIcon.SETTINGS, "3.5em");
+		MaterialIconFactory.get().setIcon(btnSettings, MaterialIcon.SETTINGS, "40px");
 		btnSettings.setCancelButton(true);
-		btnSettings.setTranslateX(150);
+		btnSettings.setTranslateY(125);
 		btnSettings.setTooltip(new Tooltip(Language.get("home.hover.settings")));
 		btnSettings.setOnAction(new EventHandler<ActionEvent>() {
-			
+
 			@Override
 			public void handle(ActionEvent arg0) {
 				try {
@@ -67,15 +78,15 @@ public class InitMain {
 				} catch (IOException e) {
 					e.printStackTrace();
 				}
-				
+
 			}
 		});
-		sp.getChildren().add(btnSettings);
+		navigationContainer.getChildren().add(btnSettings);
 		
 		// Add statistics button
 		JFXButton btnStats = new JFXButton();
-		MaterialIconFactory.get().setIcon(btnStats, MaterialIcon.EQUALIZER, "3em");
-		btnStats.setTranslateX(-150);
+		MaterialIconFactory.get().setIcon(btnStats, MaterialIcon.EQUALIZER, "40px");
+		btnStats.setTranslateY(-125);
 		btnStats.setTooltip(new Tooltip(Language.get("home.hover.stats")));
 		btnStats.setOnAction(new EventHandler<ActionEvent>() {
 
@@ -89,11 +100,7 @@ public class InitMain {
 						}
 					}
 		});
-		sp.getChildren().add(btnStats);
-		
-		btnStart.setTranslateY(15);
-		btnStats.setTranslateY(15);
-		btnSettings.setTranslateY(15);
+		navigationContainer.getChildren().add(btnStats);
 		
 		return scene;
 	}
