@@ -16,8 +16,8 @@ public class PowerCalculator implements Calculator {
 		return "^";
 	}
 
-	public String getClosingSign() {
-		return "";
+	public String getClosingStyle() {
+		return "-fx-font-size: 16px";
 	}
 
 	@Override

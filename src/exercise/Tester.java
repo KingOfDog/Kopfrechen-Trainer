@@ -8,20 +8,31 @@ import generators.MarkGenerator;
 import handlers.FileHandler;
 import handlers.SoundHandler;
 import javafx.event.EventHandler;
+import javafx.fxml.FXML;
+import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyEvent;
+import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
+import javafx.scene.text.Text;
+import javafx.scene.text.TextAlignment;
+import javafx.scene.text.TextFlow;
 import resources.lang.Language;
 import settings.Settings;
 import statistics.Statistics;
 
+import java.nio.file.StandardWatchEventKinds;
 import java.util.Set;
+import java.util.Stack;
 
 public class Tester {
 
     public static ExerciseSheet exercise;
+
+    @FXML
+    private TextFlow exerciseDisplay;
 
     public static boolean isChecked = false;
     public static int exercises = 0;
@@ -63,16 +74,23 @@ public class Tester {
     }
 
     public void setExercise(Scene scene) {
-        Label labelExercise = (Label) scene.lookup("#exercise");
         Label title = (Label) scene.lookup("#labelTitle");
         Label subtitle = (Label) scene.lookup("#labelSubheader");
         JFXTextField input = (JFXTextField) scene.lookup("#answerInput");
-        labelExercise.setText(exercise.getExercise());
-        labelExercise.setTextFill(Color.web("#292929"));
+        StackPane exContainer = (StackPane) scene.lookup("#exerciseContainer");
+        if(exContainer.getChildren().size() > 0) {
+            exContainer.getChildren().remove(0);
+        }
+
+        exerciseDisplay = exercise.getExercise();
+        exerciseDisplay.setTextAlignment(TextAlignment.CENTER);
+        exerciseDisplay.getStyleClass().add("exercise");
+        exContainer.getChildren().add(exerciseDisplay);
         title.setText(Language.get("test.title"));
         title.setTextFill(Color.web("#292929"));
         subtitle.setText(Language.get("test.subtitle"));
         input.setText("");
+
         isChecked = false;
         timePlayed = System.currentTimeMillis();
         ((Label) scene.lookup("#currentDifficulty")).setText(String.format(settings.lang.getValue(), "%.5f", difficulty));
@@ -98,8 +116,14 @@ public class Tester {
         if (input.isEmpty()) return;
 
         float answer = Float.valueOf(input);
-        Label labelExercise = (Label) scene.lookup("#exercise");
-        labelExercise.setText(exercise.getExerciseSolution());
+        StackPane exContainer = (StackPane) scene.lookup("#exerciseContainer");
+
+        exContainer.getChildren().remove(0);
+
+        exerciseDisplay = exercise.getExerciseSolution();
+        exerciseDisplay.setTextAlignment(TextAlignment.CENTER);
+        exerciseDisplay.getStyleClass().add("exercise");
+
         Label title = (Label) scene.lookup("#labelTitle");
         Label title2 = (Label) scene.lookup("#labelSubheader");
 
@@ -110,7 +134,7 @@ public class Tester {
         SoundHandler sound = new SoundHandler(settings.sounds.getValue(), settings.volume);
         if (answer == exercise.getSolution()) {
             sound.playSound("/resources/sounds/correct.mp3");
-            labelExercise.setTextFill(Color.web(settings.exerciseCorrect));
+            exerciseDisplay.setStyle("-fx-color: " + settings.exerciseCorrect);
             title.setText(Language.get("test.title.correct"));
             title.setTextFill(Color.web(settings.exerciseCorrect));
             title2.setText(Language.get("test.subtitle.correct"));
@@ -119,7 +143,7 @@ public class Tester {
             Statistics.addScore(difficulty);
         } else {
             sound.playSound("/resources/sounds/wrong.mp3");
-            labelExercise.setTextFill(Color.web(settings.exerciseWrong));
+            exerciseDisplay.setStyle("-fx-color:" + settings.exerciseWrong);
             title.setText(Language.get("test.title.wrong"));
             title.setTextFill(Color.web(settings.exerciseWrong));
             title2.setText(Language.get("test.subtitle.wrong"));
@@ -132,6 +156,7 @@ public class Tester {
         double ecp = ((double) correct / (double) exercises) * (double) 15;
         String note = MarkGenerator.main(ecp);
 
+        exContainer.getChildren().add(exerciseDisplay);
         mark.setText(note);
 
         isChecked = true;

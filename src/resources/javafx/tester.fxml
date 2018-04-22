@@ -9,6 +9,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
+<?import javafx.scene.text.TextFlow?>
 <StackPane fx:id="container" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="506.0" prefWidth="922.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Label fx:id="labelTitle" alignment="CENTER" mouseTransparent="true" prefHeight="34.0" prefWidth="600.0" text="%test.title" translateY="50.0" StackPane.alignment="TOP_CENTER">
@@ -25,7 +26,13 @@
             <Insets top="15.0" />
          </StackPane.margin>
       </Label>
-      <Label fx:id="exercise" alignment="CENTER" prefHeight="17.0" styleClass="exercise" text="Exercise" textAlignment="CENTER" translateY="-60.0" />
+       <StackPane fx:id="exerciseContainer" maxHeight="17.0" alignment="CENTER" translateY="-60.0">
+
+      </StackPane>
+      <!--<TextFlow fx:id="exercise" textAlignment="CENTER" prefHeight="17.0" styleClass="exercise" translateY="-60.0">-->
+<!---->
+      <!--</TextFlow>-->
+      <!--<Label fx:id="exercise" alignment="CENTER" prefHeight="17.0" styleClass="exercise" text="Exercise" textAlignment="CENTER" translateY="-60.0" />-->
       <JFXTextField fx:id="answerInput" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="300.0" promptText="%test.input" translateY="25.0">
          <tooltip>
             <Tooltip text="%test.input.hover" />

@@ -2,14 +2,20 @@ package exercise;
 
 import exercise.calculator.Calculator;
 import exercise.calculator.PowerCalculator;
+import javafx.geometry.VPos;
+import javafx.scene.text.Text;
+import javafx.scene.text.TextFlow;
+
+import java.time.temporal.Temporal;
+import java.time.temporal.UnsupportedTemporalTypeException;
 
 public class ExerciseSheet {
 	
 	double solution;
-	StringBuilder exercise;
+	TextFlow exercise;
 
 	public ExerciseSheet() {
-		this.exercise = new StringBuilder();
+		this.exercise = new TextFlow();
 	}
 	
 	public void firstNumbers(Calculator calculator) {
@@ -25,11 +31,18 @@ public class ExerciseSheet {
 		}
 		
 		solution = calculator.calculate(a, b);
-		exercise.append(String.format("%.0f %s %.0f", a, calculator.getOperatorSign(), b));
-
+		Text part1;
+		Text part2 = new Text();
 		if(calculator.getClass() == PowerCalculator.class) {
-		    exercise.append(((PowerCalculator) calculator).getClosingSign());
+		    part1 = new Text(String.format("%.0f", a));
+            part2 = new Text(String.format("%.0f", b));
+            part2.setStyle(((PowerCalculator) calculator).getClosingStyle());
+            part2.setTranslateY(-12.0);
+        } else {
+            part1 = new Text(String.format("%.0f %s %.0f", a, calculator.getOperatorSign(), b));
         }
+
+        this.exercise.getChildren().addAll(part1, part2);
 	}
 	
 	public void addNumber(Calculator calculator) {
@@ -40,15 +53,24 @@ public class ExerciseSheet {
 		}
 		
 		solution = calculator.calculate(solution, a);
-		exercise.append(String.format(" %s %.0f", calculator.getOperatorSign(), a));
+
+		Text text = new Text(String.format(" %s %.0f", calculator.getOperatorSign(), a));
+		this.exercise.getChildren().add(text);
 	}
 	
-	public String getExercise() {
-		return exercise.toString() + " = ???";
+	public TextFlow getExercise() {
+	    TextFlow tempExercise = exercise;
+        Text endText = new Text(" = ???");
+        tempExercise.getChildren().add(endText);
+		return tempExercise;
 	}
 	
-	public String getExerciseSolution() {
-		return exercise.toString() + " = " + solution;
+	public TextFlow getExerciseSolution() {
+	    TextFlow tempExercise = exercise;
+        tempExercise.getChildren().remove(tempExercise.getChildren().size() - 1);
+	    Text solutionText = new Text(" = " + solution);
+        tempExercise.getChildren().add(solutionText);
+		return tempExercise;
 	}
 	
 	public double getSolution() {
