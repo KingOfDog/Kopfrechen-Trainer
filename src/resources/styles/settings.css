@@ -9,6 +9,23 @@
 	-fx-text-fill: #424242;
 }
 
+.jfx-tab-pane .tab-header-background {
+    -fx-background-color: #2196f3;
+}
+
+.jfx-tab-pane .tab-selected-line {
+    -fx-background-color: white;
+}
+
+.jfx-tab-pane .jfx-rippler {
+    -jfx-rippler-fill: white;
+}
+
+.jfx-tab-pane {
+    -jfx-width: 33%;
+    -jfx-color: yellow;
+}
+
 .jfx-button {
 	-fx-button-type: RAISED;
 	-fx-background-color: #00e676;

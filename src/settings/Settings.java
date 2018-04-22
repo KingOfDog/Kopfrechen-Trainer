@@ -38,8 +38,8 @@ public class Settings {
     @Expose public IntegerProperty mulMax = new IntegerProperty("mulMax", 25);
     @Expose public IntegerProperty divMin = new IntegerProperty("divMin", 1);
     @Expose public IntegerProperty divMax = new IntegerProperty("divMax", 25);
-    @Expose public IntegerProperty powMinExpo = new IntegerProperty("powMinExpo", 1);
-    @Expose public IntegerProperty powMaxExpo = new IntegerProperty("powMaxExpo", 3);
+    @Expose public IntegerProperty powMinExpo = new IntegerProperty("powMinExpo", 2);
+    @Expose public IntegerProperty powMaxExpo = new IntegerProperty("powMaxExpo", 2);
     @Expose public IntegerProperty powMinBase = new IntegerProperty("powMinBase", 0);
     @Expose public IntegerProperty powMaxBase = new IntegerProperty("powMaxBase", 25);
     @Expose public IntegerProperty rootMinExpo = new IntegerProperty("rootMinExpo", 1);

@@ -28,6 +28,10 @@ public class SettingsDeserializer implements JsonDeserializer<Settings> {
         final int mulMax = jsonObject.get("mulMax").getAsInt();
         final int divMin = jsonObject.get("divMin").getAsInt();
         final int divMax = jsonObject.get("divMax").getAsInt();
+        final int powMinBase = jsonObject.get("powMinBase").getAsInt();
+        final int powMaxBase = jsonObject.get("powMaxBase").getAsInt();
+        final int powMinExpo = jsonObject.get("powMinExpo").getAsInt();
+        final int powMaxExpo = jsonObject.get("posMaxExpo").getAsInt();
 
 		final boolean subNeg = jsonObject.get("subNeg").getAsBoolean();
 		final boolean divDec = jsonObject.get("divDec").getAsBoolean();
@@ -63,6 +67,10 @@ public class SettingsDeserializer implements JsonDeserializer<Settings> {
         settings.mulMax.setValue(mulMax);
         settings.divMin.setValue(divMin);
         settings.divMax.setValue(divMax);
+        settings.powMinBase.setValue(powMinBase);
+        settings.powMaxBase.setValue(powMaxBase);
+        settings.powMinExpo.setValue(powMinExpo);
+        settings.powMaxExpo.setValue(powMaxExpo);
 
         settings.subNeg.setValue(subNeg);
         settings.divDec.setValue(divDec);

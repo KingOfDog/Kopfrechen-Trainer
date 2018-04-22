@@ -81,7 +81,7 @@ public class Tester {
     public static void generateExercise() {
         Settings settings = Settings.getInstance();
 
-        Calculator calc = Calculator.getRandomCalculator(settings.add.getValue(), settings.sub.getValue(), settings.mul.getValue(), settings.div.getValue());
+        Calculator calc = Calculator.getRandomCalculator(settings.add.getValue(), settings.sub.getValue(), settings.mul.getValue(), settings.div.getValue(), settings.pow.getValue());
         int count = 2 + (int) (Math.random() * ((settings.factorCount.getValue() - 2) + 1));
         Exercise newExercise = new Exercise(calc, count);
 

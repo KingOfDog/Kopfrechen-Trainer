@@ -6,17 +6,17 @@ import java.util.Random;
 
 public interface Calculator {
 	
-	public float calculate(float a, float b);
+	public double calculate(double a, float b);
 	
-	public char getOperatorSign();
+	public String getOperatorSign();
 	
 	public int minimumBound();
 	
 	public int maximumBound();
 	
-	public boolean isValid(float a, float b);
+	public boolean isValid(double a, float b);
 	
-	public static Calculator getRandomCalculator(boolean add, boolean sub, boolean mul, boolean div) {
+	public static Calculator getRandomCalculator(boolean add, boolean sub, boolean mul, boolean div, boolean pow) {
 		List<Calculator> calculators = new ArrayList<>();
 		if(add) {
 			calculators.add(new AdditionCalculator());
@@ -29,6 +29,9 @@ public interface Calculator {
 		}
 		if(div) {
 			calculators.add(new DivisionCalculator());
+		}
+		if(pow) {
+			calculators.add(new PowerCalculator());
 		}
 		return calculators.get(new Random().nextInt(calculators.size()));
 	}
