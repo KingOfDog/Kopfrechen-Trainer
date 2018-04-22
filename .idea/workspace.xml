@@ -10,66 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31730c85-b9da-481e-a951-1640dbd8c917" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/fontawesomefx_commons_8_14.xml" afterPath="$PROJECT_DIR$/.idea/libraries/fontawesomefx_commons_8_14.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/fontawesomefx_materialicons_2_2_0_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/fontawesomefx_materialicons_2_2_0_3.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/jfoenix.xml" afterPath="$PROJECT_DIR$/.idea/libraries/jfoenix.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/exercise/Exercise.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/exercise/Exercise.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/exercise/ExerciseSheet.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/exercise/ExerciseSheet.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/exercise/Tester.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/exercise/Tester.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/exercise/calculator/AdditionCalculator.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/exercise/calculator/AdditionCalculator.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/exercise/calculator/Calculator.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/exercise/calculator/Calculator.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/exercise/calculator/DivisionCalculator.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/exercise/calculator/DivisionCalculator.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/exercise/calculator/MultiplicationCalculator.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/exercise/calculator/MultiplicationCalculator.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/exercise/calculator/SubtractionCalculator.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/exercise/calculator/SubtractionCalculator.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/generators/DifficultyGenerator.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/generators/DifficultyGenerator.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/generators/MarkGenerator.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/generators/MarkGenerator.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/handlers/FXMLHandler.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/handlers/FXMLHandler.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/handlers/FileHandler.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/handlers/FileHandler.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/handlers/SceneHandler.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/handlers/SceneHandler.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/handlers/SettingsHandler.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/handlers/SettingsHandler.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/handlers/SoundHandler.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/handlers/SoundHandler.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/handlers/UpdateHandler.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/handlers/UpdateHandler.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/initializers/InitMain$1.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/initializers/InitMain$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/initializers/InitMain$2.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/initializers/InitMain$2.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/initializers/InitMain$3.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/initializers/InitMain$3.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/initializers/InitMain.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/initializers/InitMain.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/initializers/InitSettings.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/initializers/InitSettings.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/initializers/InitStats.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/initializers/InitStats.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/initializers/InitTester.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/initializers/InitTester.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/initializers/InitToolbar$1.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/initializers/InitToolbar$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/initializers/InitToolbar$2.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/initializers/InitToolbar$2.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/initializers/InitToolbar.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/initializers/InitToolbar.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/main/Main.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/main/Main.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/properties/BooleanProperty$Serializer.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/properties/BooleanProperty$Serializer.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/properties/BooleanProperty.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/properties/BooleanProperty.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/properties/IntegerProperty$Serializer.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/properties/IntegerProperty$Serializer.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/properties/IntegerProperty.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/properties/IntegerProperty.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/properties/LocaleProperty$Serializer.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/properties/LocaleProperty$Serializer.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/properties/LocaleProperty.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/properties/LocaleProperty.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/properties/Property.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/properties/Property.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/resources/lang/Language.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/resources/lang/Language.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/resources/lang/Locales.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/resources/lang/Locales.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/settings/Settings.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/settings/Settings.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/settings/SettingsDeserializer.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/settings/SettingsDeserializer.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/statistics/Statistics.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/statistics/Statistics.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/statistics/StatisticsDeserializer.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/statistics/StatisticsDeserializer.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/statistics/Stats.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/statistics/Stats.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/updates/Version.class" afterPath="$PROJECT_DIR$/out/production/Kopfrechen-Trainer/updates/Version.class" />
-      <change beforePath="$PROJECT_DIR$/src/exercise/Exercise.java" afterPath="$PROJECT_DIR$/src/exercise/Exercise.java" />
-      <change beforePath="$PROJECT_DIR$/src/generators/MarkGenerator.java" afterPath="$PROJECT_DIR$/src/generators/MarkGenerator.java" />
-      <change beforePath="$PROJECT_DIR$/src/handlers/SettingsHandler.java" afterPath="$PROJECT_DIR$/src/handlers/SettingsHandler.java" />
-      <change beforePath="$PROJECT_DIR$/src/init/InitMain.java" afterPath="$PROJECT_DIR$/src/init/InitMain.java" />
-      <change beforePath="$PROJECT_DIR$/src/initializers/InitMain.java" afterPath="$PROJECT_DIR$/src/initializers/InitMain.java" />
-      <change beforePath="$PROJECT_DIR$/src/initializers/InitStats.java" afterPath="$PROJECT_DIR$/src/initializers/InitStats.java" />
-      <change beforePath="$PROJECT_DIR$/src/initializers/InitTester.java" afterPath="$PROJECT_DIR$/src/initializers/InitTester.java" />
-      <change beforePath="$PROJECT_DIR$/src/initializers/InitToolbar.java" afterPath="$PROJECT_DIR$/src/initializers/InitToolbar.java" />
-      <change beforePath="$PROJECT_DIR$/src/javafx/Switch.java" afterPath="$PROJECT_DIR$/src/javafx/Switch.java" />
-      <change beforePath="$PROJECT_DIR$/src/javafx/main.fxml" afterPath="$PROJECT_DIR$/src/javafx/main.fxml" />
-      <change beforePath="$PROJECT_DIR$/src/main/Exercise.java" afterPath="$PROJECT_DIR$/src/main/Exercise.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/Marks.java" afterPath="$PROJECT_DIR$/src/main/Marks.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/Settings.java" afterPath="$PROJECT_DIR$/src/main/Settings.java" />
+      <change beforePath="$PROJECT_DIR$/src/resources/lang/lang_en.properties" afterPath="$PROJECT_DIR$/src/resources/lang/lang_en.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -114,17 +56,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InitStats.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/init/InitStats.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="27" column="5" lean-forward="false" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InitMain.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="InitMain.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/initializers/InitMain.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="860">
@@ -133,6 +65,19 @@
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lang_en.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/resources/lang/lang_en.properties">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="ResourceBundle">
+            <state />
           </provider>
         </entry>
       </file>
@@ -231,6 +176,7 @@
         <option value="$PROJECT_DIR$/src/initializers/InitSettings.java" />
         <option value="$PROJECT_DIR$/src/initializers/InitStats.java" />
         <option value="$PROJECT_DIR$/src/initializers/InitMain.java" />
+        <option value="$PROJECT_DIR$/src/resources/lang/lang_en.properties" />
       </list>
     </option>
   </component>
@@ -299,6 +245,27 @@
               <item name="MATH" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="javafx" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MATH" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MATH" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MATH" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MATH" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MATH" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MATH" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
+              <item name="Resource Bundle 'lang'" type="a6c14932:ResourceBundleNode" />
             </path>
           </expand>
           <select />
@@ -567,12 +534,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1486385286293</updated>
-      <workItem from="1524384000384" duration="4793000" />
+      <workItem from="1524384000384" duration="5121000" />
     </task>
+    <task id="LOCAL-00001" summary="Very bad Bugfix for #4">
+      <created>1524389598308</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1524389598308</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4793000" />
+    <option name="totallyTimeSpent" value="5121000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="3862" height="2122" extended-state="6" />
@@ -615,6 +590,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Very bad Bugfix for #4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Very bad Bugfix for #4" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -624,14 +603,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/statistics/Statistics.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/statistics/Stats.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="950">
@@ -830,6 +801,7 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
@@ -1068,6 +1040,17 @@
             <element signature="imports" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/lang/lang_en.properties">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="ResourceBundle">
+        <state />
       </provider>
     </entry>
   </component>
