@@ -26,7 +26,7 @@ Für **Anfänger** ist es zu empfehlen, negative Ergebnisse und Lösungen mit De
 
 ### TODO
 - Verbesserte Statistiken
-- Wurzeln und Potenzen als Aufgabenmöglichkeit implementieren
+- Wurzeln als Aufgabenmöglichkeit implementieren
 - Textaufgaben-Modus einfügen
 - Aufgaben mit linearen und quadratischen Funktionen hinzufügen
 
@@ -50,6 +50,6 @@ I suggest **beginners** to disable negative results and solutions with decimal p
 
 ### TODO
 - Improved statistics
-- Implementation of root and potencies exercises
+- Implementation of root exercises
 - Add a word problems mode
 - Linear and quadratic functions
