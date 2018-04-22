@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.image.*?>
-<?import com.jfoenix.controls.*?>
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.paint.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
 
-<StackPane fx:id="container" prefHeight="506.0" prefWidth="922.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.FXMLDocumentController">
+
+<StackPane fx:id="container" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="506.0" prefWidth="922.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.FXMLDocumentController">
    <children>
     <Label id="labelSubheader" alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="24.0" prefWidth="700.0" styleClass="subtitle" text="%home.title.author" textAlignment="CENTER" translateY="40.0" StackPane.alignment="TOP_CENTER">
       <font>

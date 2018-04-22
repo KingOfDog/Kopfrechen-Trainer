@@ -24,7 +24,7 @@ public class InitStats {
 		
 		InitToolbar itb = new InitToolbar(scene);
 		itb.init(Language.get("stats.toolbar"), true, null, stage, "stats");
-		
+
 		return scene;
 	}
 	

@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Random;
 
+import javafx.geometry.Pos;
+import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.layout.*;
 import resources.lang.Language;
@@ -82,7 +84,7 @@ public class InitMain {
 			}
 		});
 		navigationContainer.getChildren().add(btnSettings);
-		
+
 		// Add statistics button
 		JFXButton btnStats = new JFXButton();
 		MaterialIconFactory.get().setIcon(btnStats, MaterialIcon.EQUALIZER, "40px");
@@ -101,7 +103,7 @@ public class InitMain {
 					}
 		});
 		navigationContainer.getChildren().add(btnStats);
-		
+
 		return scene;
 	}
 	

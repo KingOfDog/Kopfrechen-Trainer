@@ -24,8 +24,10 @@ public class Switch implements Initializable {
 		Scene scene = new Scene(parent);
 		scene.getStylesheets().add("/javafx/style.css");
 		stage.setScene(scene);
+
+		stage.hide();
 		stage.show();
-		
+
 		return scene;
 	}
 

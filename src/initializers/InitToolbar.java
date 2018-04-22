@@ -108,6 +108,9 @@ public class InitToolbar {
         sp.getChildren().add(0, tb);
         StackPane.setAlignment(tb, Pos.TOP_CENTER);
 
+        stage.setMaximized(!stage.isMaximized());
+        stage.setMaximized(!stage.isMaximized());
+
         return this.scene;
     }
 

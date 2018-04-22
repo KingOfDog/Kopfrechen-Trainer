@@ -8,7 +8,7 @@ import com.jfoenix.controls.JFXSlider;
 import com.jfoenix.controls.JFXSnackbar;
 import com.jfoenix.controls.JFXTextField;
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
+//import com.sun.org.apache.xpath.internal.operations.Bool;
 import initializers.InitSettings;
 import javafx.fxml.FXML;
 import javafx.scene.Node;

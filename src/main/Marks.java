@@ -34,7 +34,7 @@ public class Marks {
 		} else if(ecp >= 1) {
 			note = "Mangelhaft minus (5-)";
 		} else if(ecp >= 0) {
-			note = "Ungenügend (6)";
+			note = "UngenÃ¼gend (6)";
 		}
 		return note;
 	}

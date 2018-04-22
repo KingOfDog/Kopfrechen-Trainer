@@ -22,7 +22,7 @@ public class InitTester {
 		
 		InitToolbar itb = new InitToolbar(scene);
 		itb.init(Language.get("test.toolbar"), true, MaterialIcon.DONE, stage, "tester");
-		
+
 		return scene;
 	}
 	

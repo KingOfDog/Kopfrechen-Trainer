@@ -57,7 +57,7 @@ public class Settings {
 		difficulty.setText(String.valueOf(Difficulty.getDifficulty()));
 		language.getItems().add(new Label("Deutsch"));
 		language.getItems().add(new Label("English"));
-		language.getItems().add(new Label("Français"));
+		language.getItems().add(new Label("FranÃ§ais"));
 		if(jsonFiles.Settings.lang.equals(new Locale("de", "DE"))) language.getSelectionModel().select(0);
 		else if(jsonFiles.Settings.lang.equals(new Locale("fr", "FR"))) language.getSelectionModel().select(2);
 		else language.getSelectionModel().select(1);
@@ -103,7 +103,7 @@ public class Settings {
 		Locale lang;
 		if(language.equals("Deutsch")) {
 			lang = new Locale("de", "DE");
-		} else if(language.equals("Français")) {
+		} else if(language.equals("FranÃ§ais")) {
 			lang = new Locale("fr", "FR");
 		} else {
 			lang = new Locale("en", "US");

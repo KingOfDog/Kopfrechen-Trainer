@@ -92,7 +92,7 @@ public class Exercise {
 		Integer number1;
 		Integer number2;
 		if(Settings.divComma) {
-			System.out.println("Die erweiterte Divisions-Funktion ist noch nicht verfügbar!");
+			System.out.println("Die erweiterte Divisions-Funktion ist noch nicht verfÃ¼gbar!");
 		}
 		if(numbers[0] >= numbers[1]) {
 			result = numbers[0];
