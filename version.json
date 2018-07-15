@@ -1,7 +1,7 @@
 {
   version: "1.5.1",
-  path: "https://github.com/KingOfDog/MATH/releases/download/v1.5.1/math-1.5.1.exe",
-  version_info: "https://github.com/KingOfDog/MATH/releases/tag/v1.5.1",
-  size: "9.93MB",
-  check_sum: "2b780cc4fbd13d8bb1de95627b59a23f"
+  path: "https://github.com/KingOfDog/MATH/releases/download/v1.6/math-1.6.jar",
+  version_info: "https://github.com/KingOfDog/MATH/releases/tag/v1.6",
+  size: "8.66MB",
+  check_sum: "a9406b4d4e77a248b7100be18cd5540e"
 }
